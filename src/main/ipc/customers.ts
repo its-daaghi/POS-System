@@ -17,11 +17,25 @@ export function registerCustomerHandlers() {
   })
 
   ipcMain.handle('create-customer', (_, data: any) => {
-    const result = db().prepare(`
-      INSERT INTO customers (name, phone, address, credit_limit, notes)
-      VALUES (?, ?, ?, ?, ?)
-    `).run(data.name, data.phone || null, data.address || null, data.credit_limit || 0, data.notes || null)
-    return { id: result.lastInsertRowid, ...data }
+    const create = db().transaction(() => {
+      const balance = parseFloat(data.opening_balance) || 0
+      const result = db().prepare(`
+        INSERT INTO customers (name, phone, address, credit_limit, current_balance, notes)
+        VALUES (?, ?, ?, ?, ?, ?)
+      `).run(data.name, data.phone || null, data.address || null, data.credit_limit || 0, balance, data.notes || null)
+      
+      const customerId = result.lastInsertRowid
+      
+      if (balance > 0) {
+        db().prepare(`
+          INSERT INTO credit_payments (customer_id, amount, payment_type, notes, user_id)
+          VALUES (?, ?, 'credit', 'Opening Balance (from physical register)', ?)
+        `).run(customerId, balance, data.user_id || null)
+      }
+      
+      return { id: customerId, ...data }
+    })
+    return create()
   })
 
   ipcMain.handle('update-customer', (_, id: number, data: any) => {

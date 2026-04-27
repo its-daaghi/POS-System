@@ -5,7 +5,7 @@ import { useSettingsStore } from '../../store/settingsStore'
 import { useAuthStore } from '../../store/authStore'
 import toast from 'react-hot-toast'
 
-const emptyForm = { name: '', phone: '', address: '', credit_limit: '', notes: '' }
+const emptyForm = { name: '', phone: '', address: '', credit_limit: '', opening_balance: '', notes: '' }
 const emptyPayment = { amount: '', notes: '' }
 
 export default function CustomersPage() {
@@ -35,11 +35,11 @@ export default function CustomersPage() {
   )
 
   const openAdd = () => { setEditing(null); setForm(emptyForm); setShowModal(true) }
-  const openEdit = (c: any) => { setEditing(c); setForm({ name:c.name, phone:c.phone||'', address:c.address||'', credit_limit:c.credit_limit||'', notes:c.notes||'' }); setShowModal(true) }
+  const openEdit = (c: any) => { setEditing(c); setForm({ name:c.name, phone:c.phone||'', address:c.address||'', credit_limit:c.credit_limit||'', opening_balance: '', notes:c.notes||'' }); setShowModal(true) }
 
   const handleSave = async () => {
     if (!form.name) { toast.error('Name is required'); return }
-    const data = { ...form, credit_limit: parseFloat(form.credit_limit)||0 }
+    const data = { ...form, credit_limit: parseFloat(form.credit_limit)||0, opening_balance: parseFloat(form.opening_balance)||0, user_id: user?.id }
     if (editing) { await window.api.updateCustomer(editing.id, data) } else { await window.api.createCustomer(data) }
     toast.success(editing ? 'Customer updated' : 'Customer added')
     setShowModal(false); load()
@@ -115,6 +115,9 @@ export default function CustomersPage() {
             <div className="form-group"><label className="label">Phone</label><input className="input" value={form.phone} onChange={e => setForm({...form,phone:e.target.value})} placeholder="+92..." /></div>
             <div className="form-group"><label className="label">Credit Limit</label><input className="input" type="number" value={form.credit_limit} onChange={e => setForm({...form,credit_limit:e.target.value})} placeholder="0" /></div>
           </div>
+          {!editing && (
+            <div className="form-group"><label className="label">Opening Balance (Previous Udhaar)</label><input className="input border-red-900/50 focus:ring-red-500" type="number" value={form.opening_balance} onChange={e => setForm({...form,opening_balance:e.target.value})} placeholder="0.00" /></div>
+          )}
           <div className="form-group"><label className="label">Address</label><input className="input" value={form.address} onChange={e => setForm({...form,address:e.target.value})} /></div>
           <div className="form-group"><label className="label">Notes</label><textarea className="input" rows={2} value={form.notes} onChange={e => setForm({...form,notes:e.target.value})} /></div>
         </div>

@@ -4,7 +4,7 @@ import { getDb } from '../../database/connection'
 export function registerReportHandlers() {
   const db = () => getDb()
 
-  ipcMain.handle('get-sales-report', (_, filters: any) => {
+  ipcMain.handle('get-sales-report', (_, filters: any = {}) => {
     const params: any[] = []
     let dateFilter = 'WHERE s.status = \'completed\''
     if (filters.start_date) { dateFilter += ' AND date(s.created_at) >= ?'; params.push(filters.start_date) }
@@ -42,7 +42,7 @@ export function registerReportHandlers() {
     return { summary, byPayment, byDay, sales }
   })
 
-  ipcMain.handle('get-profit-loss-report', (_, filters: any) => {
+  ipcMain.handle('get-profit-loss-report', (_, filters: any = {}) => {
     const params: any[] = []
     let dateFilter = 'WHERE s.status = \'completed\''
     if (filters.start_date) { dateFilter += ' AND date(s.created_at) >= ?'; params.push(filters.start_date) }
@@ -100,7 +100,7 @@ export function registerReportHandlers() {
     `).all()
   })
 
-  ipcMain.handle('get-top-products', (_, filters: any) => {
+  ipcMain.handle('get-top-products', (_, filters: any = {}) => {
     const params: any[] = []
     let dateFilter = 'WHERE s.status = \'completed\''
     if (filters.start_date) { dateFilter += ' AND date(s.created_at) >= ?'; params.push(filters.start_date) }
@@ -159,6 +159,6 @@ export function registerReportHandlers() {
 
     const expTotal = db().prepare("SELECT COALESCE(SUM(amount),0) as total FROM expenses WHERE expense_date=?").get(date) as any
 
-    return { date, sales, summary, expenses, expTotal: expTotal.total }
+    return { date, sales, summary, expenses, expTotal: expTotal?.total || 0 }
   })
 }
