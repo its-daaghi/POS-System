@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply bg-dark-900 text-white font-sans;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-500 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-400;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed select-none;
+  }
+  .btn-primary {
+    @apply btn bg-primary-600 hover:bg-primary-500 text-white shadow-lg shadow-primary-900/30 active:scale-95;
+  }
+  .btn-secondary {
+    @apply btn bg-dark-700 hover:bg-dark-600 text-gray-200 border border-dark-500 active:scale-95;
+  }
+  .btn-success {
+    @apply btn bg-emerald-600 hover:bg-emerald-500 text-white active:scale-95;
+  }
+  .btn-danger {
+    @apply btn bg-red-600 hover:bg-red-500 text-white active:scale-95;
+  }
+  .btn-warning {
+    @apply btn bg-amber-500 hover:bg-amber-400 text-white active:scale-95;
+  }
+  .btn-ghost {
+    @apply btn hover:bg-dark-700 text-gray-400 hover:text-white active:scale-95;
+  }
+  .btn-lg {
+    @apply px-6 py-3.5 text-base rounded-xl;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+  .btn-icon {
+    @apply p-2 rounded-lg;
+  }
+
+  .card {
+    @apply bg-dark-800 border border-dark-700 rounded-xl p-5;
+  }
+  .card-hover {
+    @apply card hover:border-dark-500 transition-all duration-200 cursor-pointer;
+  }
+
+  .input {
+    @apply w-full bg-dark-700 border border-dark-600 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-gray-500
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+  }
+  .input-lg {
+    @apply input text-base py-3.5;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-gray-400 mb-1.5;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-green  { @apply badge bg-emerald-900/50 text-emerald-400 border border-emerald-800; }
+  .badge-red    { @apply badge bg-red-900/50 text-red-400 border border-red-800; }
+  .badge-yellow { @apply badge bg-amber-900/50 text-amber-400 border border-amber-800; }
+  .badge-blue   { @apply badge bg-blue-900/50 text-blue-400 border border-blue-800; }
+  .badge-purple { @apply badge bg-purple-900/50 text-purple-400 border border-purple-800; }
+  .badge-gray   { @apply badge bg-dark-600 text-gray-400 border border-dark-500; }
+
+  .table-container {
+    @apply w-full overflow-auto rounded-xl border border-dark-700;
+  }
+  .table {
+    @apply w-full text-sm;
+  }
+  .table thead tr {
+    @apply bg-dark-700;
+  }
+  .table thead th {
+    @apply px-4 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap;
+  }
+  .table tbody tr {
+    @apply border-t border-dark-700 hover:bg-dark-700/50 transition-colors duration-150;
+  }
+  .table tbody td {
+    @apply px-4 py-3 text-gray-200 whitespace-nowrap;
+  }
+
+  .stat-card {
+    @apply card flex items-center gap-4;
+  }
+  .stat-icon {
+    @apply flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-xl;
+  }
+
+  .page-header {
+    @apply flex items-center justify-between mb-6;
+  }
+  .page-title {
+    @apply text-2xl font-bold text-white;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 cursor-pointer;
+  }
+  .sidebar-item-active {
+    @apply sidebar-item bg-primary-600/20 text-primary-400 border border-primary-600/30;
+  }
+  .sidebar-item-inactive {
+    @apply sidebar-item text-gray-400 hover:text-white hover:bg-dark-700;
+  }
+
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in;
+  }
+  .modal-box {
+    @apply bg-dark-800 border border-dark-600 rounded-2xl shadow-2xl w-full max-h-[90vh] overflow-y-auto animate-fade-in;
+  }
+  .modal-header {
+    @apply flex items-center justify-between p-6 border-b border-dark-700;
+  }
+  .modal-body { @apply p-6; }
+  .modal-footer { @apply flex items-center justify-end gap-3 p-6 border-t border-dark-700; }
+
+  .form-group { @apply space-y-1.5; }
+  .form-row { @apply grid grid-cols-2 gap-4; }
+
+  .divider { @apply border-t border-dark-700 my-4; }
+
+  /* POS specific */
+  .pos-product-card {
+    @apply card-hover p-4 flex flex-col gap-2 active:scale-95 transition-transform;
+  }
+  .cart-item {
+    @apply flex items-center gap-3 p-3 bg-dark-700/50 rounded-lg border border-dark-600;
+  }
+  .numpad-btn {
+    @apply h-14 bg-dark-700 hover:bg-dark-600 border border-dark-600 rounded-xl text-lg font-semibold
+           transition-all duration-150 active:scale-95 active:bg-dark-500 cursor-pointer;
+  }
+  .payment-method-btn {
+    @apply flex flex-col items-center gap-2 p-4 rounded-xl border-2 cursor-pointer transition-all duration-200;
+  }
+  .payment-method-btn.selected {
+    @apply border-primary-500 bg-primary-600/20 text-primary-400;
+  }
+  .payment-method-btn.unselected {
+    @apply border-dark-600 bg-dark-700 text-gray-400 hover:border-dark-500;
+  }
+}
+
+/* Print styles */
+@media print {
+  body { background: white !important; color: black !important; overflow: visible; }
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+}
+.print-only { display: none; }
