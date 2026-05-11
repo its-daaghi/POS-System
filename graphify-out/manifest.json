@@ -12,8 +12,8 @@
     "hash": "5a3c72deea375cf1d5cef732cfce9dcd"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1778479684.098394,
-    "hash": "0a439423f2b1439d4898998ee57533c5"
+    "mtime": 1778484368.0672028,
+    "hash": "ae80a52aaecd6b3a7b3db585315a2297"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
     "mtime": 1778479678.3773394,
@@ -48,8 +48,8 @@
     "hash": "00c0b9d9e26fe101887fc019c5f00539"
   },
   "E:\\POS System\\src\\main\\ipc\\sales.ts": {
-    "mtime": 1777274330.7541533,
-    "hash": "4d37f26582b4b2bcb08a99194effb50e"
+    "mtime": 1778484367.4448178,
+    "hash": "9dcfe3fe384117ea3d8e5d037591b584"
   },
   "E:\\POS System\\src\\main\\ipc\\settings.ts": {
     "mtime": 1777274403.0952117,
@@ -116,16 +116,16 @@
     "hash": "7d5caa2274e00a4937317de946e950cf"
   },
   "E:\\POS System\\src\\renderer\\pages\\POS\\POSPage.tsx": {
-    "mtime": 1777274951.6357,
-    "hash": "8bc92b4d64ade509df6979d45c14184c"
+    "mtime": 1778484427.101477,
+    "hash": "c641a0afb5c77c4f52cb3438a5d9f70b"
   },
   "E:\\POS System\\src\\renderer\\pages\\Products\\ProductsPage.tsx": {
     "mtime": 1777275028.419937,
     "hash": "9e0f8d051e6af8ed1befac9c608c8f0b"
   },
   "E:\\POS System\\src\\renderer\\pages\\Reports\\ReportsPage.tsx": {
-    "mtime": 1778480912.6084995,
-    "hash": "d66d23ba877ce467551a193dea23b221"
+    "mtime": 1778481990.2176375,
+    "hash": "d2568dbb79a6a8ca394411efdf09c668"
   },
   "E:\\POS System\\src\\renderer\\pages\\Settings\\SettingsPage.tsx": {
     "mtime": 1777275323.2652605,
@@ -140,8 +140,8 @@
     "hash": "e64f121d42833849b5f3c79d47ba4fa5"
   },
   "E:\\POS System\\src\\renderer\\store\\cartStore.ts": {
-    "mtime": 1777274548.1604056,
-    "hash": "432c3472cca9408e729ae7ca8d040303"
+    "mtime": 1778484354.0495691,
+    "hash": "815698ad9f2987fd918e9668bac3b649"
   },
   "E:\\POS System\\src\\renderer\\store\\settingsStore.ts": {
     "mtime": 1777274565.2018495,

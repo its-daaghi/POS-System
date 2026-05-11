@@ -1,7 +1,7 @@
 # Graph Report - POS System  (2026-05-11)
 
 ## Corpus Check
-- 40 files · ~1,479,479 words
+- 40 files · ~1,479,928 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ac3ef789`
+- Built from commit: `6efdd190`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,16 +43,16 @@
 10. `ExpensesPage()` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `TopBar()` --calls--> `useAuthStore`  [EXTRACTED]
+  src/renderer/components/TopBar/TopBar.tsx → src/renderer/store/authStore.ts
 - `RequireAuth()` --calls--> `useAuthStore`  [EXTRACTED]
   src/renderer/App.tsx → src/renderer/store/authStore.ts
 - `App()` --calls--> `useSettingsStore`  [EXTRACTED]
   src/renderer/App.tsx → src/renderer/store/settingsStore.ts
 - `Sidebar()` --calls--> `useAuthStore`  [EXTRACTED]
   src/renderer/components/Sidebar/Sidebar.tsx → src/renderer/store/authStore.ts
-- `TopBar()` --calls--> `useAuthStore`  [EXTRACTED]
-  src/renderer/components/TopBar/TopBar.tsx → src/renderer/store/authStore.ts
-- `CustomersPage()` --calls--> `useSettingsStore`  [EXTRACTED]
-  src/renderer/pages/Customers/CustomersPage.tsx → src/renderer/store/settingsStore.ts
+- `Sidebar()` --calls--> `useSettingsStore`  [EXTRACTED]
+  src/renderer/components/Sidebar/Sidebar.tsx → src/renderer/store/settingsStore.ts
 
 ## Communities (17 total, 4 thin omitted)
 
@@ -73,28 +73,28 @@ Cohesion: 0.2
 Nodes (11): DashboardPage(), emptyForm, ExpensesPage(), ReportsPage(), Tab, TABS, formatCurrency(), formatDate() (+3 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.26
-Nodes (6): LoginPage(), App(), RequireAuth(), useAuthStore, pageTitles, TopBar()
-
-### Community 5 - "Community 5"
 Cohesion: 0.22
 Nodes (6): ModalProps, sizeClasses, POSPage(), CartItem, CartState, useCartStore
 
+### Community 5 - "Community 5"
+Cohesion: 0.29
+Nodes (7): emptyForm, ProductsPage(), UNITS, SettingsState, useSettingsStore, emptySupplier, SuppliersPage()
+
 ### Community 6 - "Community 6"
 Cohesion: 0.29
-Nodes (7): emptyForm, ProductsPage(), UNITS, navItems, Sidebar(), SettingsState, useSettingsStore
+Nodes (5): AuthState, rolePermissions, User, pageTitles, TopBar()
 
 ### Community 7 - "Community 7"
+Cohesion: 0.48
+Nodes (4): LoginPage(), App(), RequireAuth(), useAuthStore
+
+### Community 9 - "Community 9"
 Cohesion: 0.4
 Nodes (4): emptyUser, SettingsPage(), Tab, TABS
 
-### Community 8 - "Community 8"
+### Community 10 - "Community 10"
 Cohesion: 0.4
 Nodes (4): CustomersPage(), emptyForm, emptyPayment, formatDateTime()
-
-### Community 9 - "Community 9"
-Cohesion: 0.5
-Nodes (3): AuthState, rolePermissions, User
 
 ## Knowledge Gaps
 - **38 isolated node(s):** `ApiType`, `ModalProps`, `sizeClasses`, `navItems`, `pageTitles` (+33 more)
@@ -106,9 +106,9 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `createWindow()` connect `Community 2` to `Community 0`?**
   _High betweenness centrality (0.044) - this node is a cross-community bridge._
-- **Why does `useAuthStore` connect `Community 4` to `Community 3`, `Community 5`, `Community 6`, `Community 7`, `Community 8`, `Community 9`, `Community 11`?**
+- **Why does `useAuthStore` connect `Community 7` to `Community 3`, `Community 4`, `Community 5`, `Community 6`, `Community 8`, `Community 9`, `Community 10`?**
   _High betweenness centrality (0.038) - this node is a cross-community bridge._
-- **Why does `useSettingsStore` connect `Community 6` to `Community 3`, `Community 4`, `Community 5`, `Community 7`, `Community 8`, `Community 11`?**
+- **Why does `useSettingsStore` connect `Community 5` to `Community 3`, `Community 4`, `Community 7`, `Community 8`, `Community 9`, `Community 10`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **What connects `ApiType`, `ModalProps`, `sizeClasses` to the rest of the system?**
   _38 weakly-connected nodes found - possible documentation gaps or missing edges._
