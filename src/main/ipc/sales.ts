@@ -199,6 +199,14 @@ export function registerSaleHandlers() {
       SELECT COALESCE(SUM(amount),0) as total FROM expenses WHERE expense_date = ?
     `).get(today) as any
 
+    const todayCOGS = db().prepare(`
+      SELECT COALESCE(SUM(si.quantity * p.purchase_price),0) as total
+      FROM sale_items si
+      JOIN sales s ON si.sale_id = s.id
+      JOIN products p ON si.product_id = p.id
+      WHERE date(s.created_at) = ? AND s.status = 'completed'
+    `).get(today) as any
+
     const creditTotal = db().prepare(`
       SELECT COALESCE(SUM(current_balance),0) as total FROM customers WHERE current_balance > 0
     `).get() as any
@@ -209,6 +217,7 @@ export function registerSaleHandlers() {
       topProducts,
       lowStockCount: lowStock.count,
       todayExpenses: todayExpenses.total,
+      todayCOGS: todayCOGS.total,
       totalCredit: creditTotal.total
     }
   })

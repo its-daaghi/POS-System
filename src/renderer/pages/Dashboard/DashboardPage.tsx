@@ -84,12 +84,19 @@ export default function DashboardPage() {
             </div>
             <div className="divider"/>
             <div className="flex justify-between">
-              <span className="text-gray-400">Today Expenses</span>
-              <span className="text-red-400 font-medium">{fmt(stats?.todayExpenses||0)}</span>
+              <span className="text-gray-400">Cost of Goods (COGS)</span>
+              <span className="text-orange-400 font-medium">- {fmt(stats?.todayCOGS||0)}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400">Net Profit Est.</span>
-              <span className="text-emerald-400 font-bold">{fmt((stats?.today?.revenue||0)-(stats?.todayExpenses||0))}</span>
+              <span className="text-gray-400">Today Expenses</span>
+              <span className="text-red-400 font-medium">- {fmt(stats?.todayExpenses||0)}</span>
+            </div>
+            <div className="divider"/>
+            <div className="flex justify-between">
+              <span className="text-gray-400 font-semibold">Net Profit Est.</span>
+              <span className={`font-bold ${((stats?.today?.revenue||0)-(stats?.todayCOGS||0)-(stats?.todayExpenses||0)) >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+                {fmt((stats?.today?.revenue||0)-(stats?.todayCOGS||0)-(stats?.todayExpenses||0))}
+              </span>
             </div>
           </div>
         </div>
