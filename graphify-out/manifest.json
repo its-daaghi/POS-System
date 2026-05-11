@@ -12,11 +12,11 @@
     "hash": "5a3c72deea375cf1d5cef732cfce9dcd"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1778484368.0672028,
-    "hash": "ae80a52aaecd6b3a7b3db585315a2297"
+    "mtime": 1778492720.078468,
+    "hash": "3d1172a73461292bb838f30aa082f91f"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
-    "mtime": 1778479678.3773394,
+    "mtime": 1778492715.8893812,
     "hash": "66a37b707c3ad27a68f5466f9c032a87"
   },
   "E:\\POS System\\src\\database\\connection.ts": {
@@ -28,12 +28,12 @@
     "hash": "d7328da5e5661705cc390ae38d4dfa74"
   },
   "E:\\POS System\\src\\main\\preload.ts": {
-    "mtime": 1777274242.7085955,
-    "hash": "a481593a91215e12a3bd0febcbde7cb5"
+    "mtime": 1778493587.2308488,
+    "hash": "e75a81f431399eb84a8e891d4da95afa"
   },
   "E:\\POS System\\src\\main\\ipc\\customers.ts": {
-    "mtime": 1777294661.7642717,
-    "hash": "8f215923e31c0a2661ee41217386f55c"
+    "mtime": 1778493482.3317647,
+    "hash": "d18d1565370d7345c772240da78e06c2"
   },
   "E:\\POS System\\src\\main\\ipc\\expenses.ts": {
     "mtime": 1777274387.0183258,
@@ -48,8 +48,8 @@
     "hash": "00c0b9d9e26fe101887fc019c5f00539"
   },
   "E:\\POS System\\src\\main\\ipc\\sales.ts": {
-    "mtime": 1778484367.4448178,
-    "hash": "9dcfe3fe384117ea3d8e5d037591b584"
+    "mtime": 1778484765.6105306,
+    "hash": "45d91d93ecb3ed453327206e70eda798"
   },
   "E:\\POS System\\src\\main\\ipc\\settings.ts": {
     "mtime": 1777274403.0952117,
@@ -124,8 +124,8 @@
     "hash": "9e0f8d051e6af8ed1befac9c608c8f0b"
   },
   "E:\\POS System\\src\\renderer\\pages\\Reports\\ReportsPage.tsx": {
-    "mtime": 1778481990.2176375,
-    "hash": "d2568dbb79a6a8ca394411efdf09c668"
+    "mtime": 1778493550.9721944,
+    "hash": "22ba3027c5138fe907423abf26014925"
   },
   "E:\\POS System\\src\\renderer\\pages\\Settings\\SettingsPage.tsx": {
     "mtime": 1777275323.2652605,
