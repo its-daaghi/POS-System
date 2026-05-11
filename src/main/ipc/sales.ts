@@ -57,14 +57,29 @@ export function registerSaleHandlers() {
         }
       }
 
-      // Handle credit
+      // Handle credit (full credit sale)
       if (data.payment_method === 'credit' && data.customer_id) {
         db().prepare(`
-          INSERT INTO credit_payments (customer_id, sale_id, amount, payment_type, user_id)
-          VALUES (?, ?, ?, 'credit', ?)
+          INSERT INTO credit_payments (customer_id, sale_id, amount, payment_type, notes, user_id)
+          VALUES (?, ?, ?, 'credit', 'Credit sale', ?)
         `).run(data.customer_id, saleId, data.total_amount, data.user_id || null)
         db().prepare('UPDATE customers SET current_balance = current_balance + ? WHERE id = ?')
           .run(data.total_amount, data.customer_id)
+      }
+
+      // Handle split payment (partial advance + rest on credit)
+      if (data.payment_method === 'split' && data.customer_id) {
+        const paidNow = parseFloat(data.paid_amount) || 0
+        const creditAmount = data.total_amount - paidNow
+        if (creditAmount > 0) {
+          db().prepare(`
+            INSERT INTO credit_payments (customer_id, sale_id, amount, payment_type, notes, user_id)
+            VALUES (?, ?, ?, 'credit', ?, ?)
+          `).run(data.customer_id, saleId, creditAmount, data.user_id || null,
+            `Split sale — Advance: ${paidNow}, Balance due: ${creditAmount}`)
+          db().prepare('UPDATE customers SET current_balance = current_balance + ? WHERE id = ?')
+            .run(creditAmount, data.customer_id)
+        }
       }
 
       return { id: saleId, bill_number: billNumber }

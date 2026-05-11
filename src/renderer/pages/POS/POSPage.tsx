@@ -62,11 +62,22 @@ export default function POSPage() {
   const total = cart.getTotal()
   const change = cashPaid ? Math.max(0, parseFloat(cashPaid) - total) : 0
 
+  const splitPaid = cart.split_paid_amount || 0
+  const splitRemaining = Math.max(0, total - splitPaid)
+
   const handleCompleteSale = async () => {
     if (cart.items.length === 0) { toast.error('Cart is empty'); return }
     if (cart.payment_method === 'credit' && !cart.customer_id) { toast.error('Select a customer for credit sale'); return }
+    if (cart.payment_method === 'split' && !cart.customer_id) { toast.error('Select a customer for split payment'); return }
+    if (cart.payment_method === 'split' && splitPaid <= 0) { toast.error('Enter advance amount paid'); return }
+    if (cart.payment_method === 'split' && splitPaid >= total) { toast.error('Advance covers full amount — use Cash instead'); return }
     setProcessing(true)
     try {
+      const paidAmount = cart.payment_method === 'cash'
+        ? parseFloat(cashPaid || '0')
+        : cart.payment_method === 'split'
+        ? splitPaid
+        : total
       const saleData = {
         customer_id: cart.customer_id,
         user_id: user?.id,
@@ -74,8 +85,8 @@ export default function POSPage() {
         discount_amount: cart.getTotalDiscount(),
         tax_amount: cart.getTaxAmount(),
         total_amount: total,
-        paid_amount: cart.payment_method === 'cash' ? parseFloat(cashPaid || '0') : total,
-        change_amount: change,
+        paid_amount: paidAmount,
+        change_amount: cart.payment_method === 'cash' ? change : 0,
         payment_method: cart.payment_method,
         notes: cart.notes,
         items: cart.items.map(i => ({
@@ -224,11 +235,11 @@ export default function POSPage() {
 
           <div className="mt-4">
             <p className="label">Payment Method</p>
-            <div className="grid grid-cols-3 gap-2">
-              {(['cash', 'card', 'credit'] as const).map(m => (
+            <div className="grid grid-cols-4 gap-2">
+              {(['cash', 'card', 'credit', 'split'] as const).map(m => (
                 <button key={m} onClick={() => cart.setPaymentMethod(m)}
                   className={`payment-method-btn py-2 text-xs font-semibold capitalize ${cart.payment_method === m ? 'selected' : 'unselected'}`}>
-                  {m === 'cash' ? '💵' : m === 'card' ? '💳' : '📒'} {m}
+                  {m === 'cash' ? '💵' : m === 'card' ? '💳' : m === 'credit' ? '📒' : '✂️'} {m}
                 </button>
               ))}
             </div>
@@ -248,9 +259,40 @@ export default function POSPage() {
             </div>
           )}
 
-          {cart.customer_id && cart.payment_method === 'credit' && (
+          {cart.payment_method === 'credit' && (
             <div className="mt-3 p-3 bg-purple-900/30 border border-purple-800 rounded-lg text-xs text-purple-300">
-              Credit sale for: <strong>{cart.customer_name}</strong>
+              {cart.customer_id
+                ? <>Full credit sale for: <strong>{cart.customer_name}</strong>. Full {fmt(total)} added to Udhaar.</>  
+                : <span className="text-red-400">⚠️ Select a customer for credit sale</span>}
+            </div>
+          )}
+
+          {cart.payment_method === 'split' && (
+            <div className="mt-3 space-y-2">
+              {!cart.customer_id && (
+                <div className="p-2 bg-red-900/30 border border-red-800 rounded-lg text-xs text-red-300">
+                  ⚠️ Select a customer above for split payment
+                </div>
+              )}
+              <label className="label">Advance Paid Now</label>
+              <input
+                value={splitPaid || ''}
+                onChange={e => cart.setSplitPaidAmount(parseFloat(e.target.value) || 0)}
+                className="input text-center text-lg font-bold"
+                type="number" min="0" max={total} placeholder="0.00"
+              />
+              {splitPaid > 0 && splitPaid < total && (
+                <div className="grid grid-cols-2 gap-2 text-center">
+                  <div className="p-2 bg-emerald-900/30 border border-emerald-800 rounded-lg">
+                    <p className="text-xs text-gray-400">Paid Now</p>
+                    <p className="font-bold text-emerald-400">{fmt(splitPaid)}</p>
+                  </div>
+                  <div className="p-2 bg-red-900/30 border border-red-800 rounded-lg">
+                    <p className="text-xs text-gray-400">Remaining (Udhaar)</p>
+                    <p className="font-bold text-red-400">{fmt(splitRemaining)}</p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -273,7 +315,7 @@ export default function POSPage() {
           </div>
         }>
         <div className="text-center space-y-3">
-          <div className="text-5xl">💳</div>
+          <div className="text-5xl">{cart.payment_method === 'split' ? '✂️' : '💳'}</div>
           <div>
             <p className="text-gray-400 text-sm">Total Amount</p>
             <p className="text-4xl font-bold text-primary-400">{fmt(total)}</p>
@@ -283,6 +325,18 @@ export default function POSPage() {
             <div className="p-3 bg-dark-700 rounded-xl">
               <p className="text-gray-400 text-xs">Cash: {fmt(parseFloat(cashPaid))}</p>
               <p className="text-emerald-400 font-bold">Change: {fmt(change)}</p>
+            </div>
+          )}
+          {cart.payment_method === 'split' && (
+            <div className="grid grid-cols-2 gap-2">
+              <div className="p-3 bg-emerald-900/30 border border-emerald-800 rounded-xl">
+                <p className="text-gray-400 text-xs">Advance Paid</p>
+                <p className="text-emerald-400 font-bold">{fmt(splitPaid)}</p>
+              </div>
+              <div className="p-3 bg-red-900/30 border border-red-800 rounded-xl">
+                <p className="text-gray-400 text-xs">Added to Udhaar</p>
+                <p className="text-red-400 font-bold">{fmt(splitRemaining)}</p>
+              </div>
             </div>
           )}
         </div>

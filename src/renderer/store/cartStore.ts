@@ -20,7 +20,8 @@ interface CartState {
   customer_name: string | null
   bill_discount_percent: number
   bill_discount_amount: number
-  payment_method: 'cash' | 'card' | 'credit'
+  payment_method: 'cash' | 'card' | 'credit' | 'split'
+  split_paid_amount: number
   notes: string
 
   addItem: (product: any, taxPercent?: number) => void
@@ -30,7 +31,8 @@ interface CartState {
   removeItem: (id: string) => void
   setBillDiscount: (percent: number, amount: number) => void
   setCustomer: (id: number | null, name: string | null) => void
-  setPaymentMethod: (method: 'cash' | 'card' | 'credit') => void
+  setSplitPaidAmount: (amount: number) => void
+  setPaymentMethod: (method: 'cash' | 'card' | 'credit' | 'split') => void
   setNotes: (notes: string) => void
   clearCart: () => void
   loadFromHeld: (data: any) => void
@@ -49,6 +51,7 @@ export const useCartStore = create<CartState>((set, get) => ({
   bill_discount_percent: 0,
   bill_discount_amount: 0,
   payment_method: 'cash',
+  split_paid_amount: 0,
   notes: '',
 
   addItem: (product: any, taxPercent = 0) => {
@@ -117,6 +120,8 @@ export const useCartStore = create<CartState>((set, get) => ({
 
   setCustomer: (id, name) => set({ customer_id: id, customer_name: name }),
 
+  setSplitPaidAmount: (amount) => set({ split_paid_amount: amount }),
+
   setPaymentMethod: (method) => set({ payment_method: method }),
 
   setNotes: (notes) => set({ notes }),
@@ -124,7 +129,7 @@ export const useCartStore = create<CartState>((set, get) => ({
   clearCart: () => set({
     items: [], customer_id: null, customer_name: null,
     bill_discount_percent: 0, bill_discount_amount: 0,
-    payment_method: 'cash', notes: ''
+    payment_method: 'cash', split_paid_amount: 0, notes: ''
   }),
 
   loadFromHeld: (data: any) => {
@@ -135,6 +140,7 @@ export const useCartStore = create<CartState>((set, get) => ({
       bill_discount_percent: data.bill_discount_percent || 0,
       bill_discount_amount: data.bill_discount_amount || 0,
       payment_method: data.payment_method || 'cash',
+      split_paid_amount: data.split_paid_amount || 0,
       notes: data.notes || ''
     })
   },
