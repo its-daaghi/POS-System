@@ -32,7 +32,13 @@ export default function ReportsPage() {
       else if (tab === 'top') setData(await window.api.getTopProducts(filters))
       else if (tab === 'credit') setData(await window.api.getCreditReport())
       else if (tab === 'eod') setData(await window.api.getEndOfDayReport(eodDate))
-    } finally { setLoading(false) }
+    } catch (error: any) {
+      console.error('Failed to load report:', error)
+      toast.error(error.message || 'Failed to load report')
+      setData(null)
+    } finally { 
+      setLoading(false) 
+    }
   }
 
   const exportPDF = () => {

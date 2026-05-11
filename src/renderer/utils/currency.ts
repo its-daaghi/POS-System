@@ -1,11 +1,14 @@
-// Currency formatting utility
-export function formatCurrency(amount: number, symbol = '₨'): string {
-  return `${symbol} ${amount.toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`
+export function formatCurrency(amount: number | null | undefined, symbol = '₨'): string {
+  const num = amount == null || isNaN(amount) ? 0 : amount;
+  return `${symbol} ${num.toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`
 }
 
-export function formatNumber(n: number, decimals = 2): string {
-  return n.toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: decimals })
+export function formatNumber(n: number | null | undefined, decimals = 2): string {
+  const num = n == null || isNaN(n) ? 0 : n;
+  return num.toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: decimals })
 }
+
+
 
 export function formatDate(dateStr: string): string {
   if (!dateStr) return '-'
