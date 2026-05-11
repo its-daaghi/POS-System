@@ -25,9 +25,102 @@ export function registerSupplierHandlers() {
 
   ipcMain.handle('get-supplier', (_, id: number) => {
     const supplier = db().prepare('SELECT * FROM suppliers WHERE id=?').get(id)
-    const purchases = db().prepare('SELECT * FROM purchases WHERE supplier_id=? ORDER BY created_at DESC LIMIT 20').all(id)
-    const payments = db().prepare('SELECT * FROM supplier_payments WHERE supplier_id=? ORDER BY created_at DESC LIMIT 20').all(id)
-    return { supplier, purchases, payments }
+
+    // Get all purchases for this supplier
+    const purchases = db().prepare(`
+      SELECT p.*, 
+        (SELECT COUNT(*) FROM purchase_items WHERE purchase_id = p.id) as item_count
+      FROM purchases p
+      WHERE p.supplier_id = ?
+      ORDER BY p.created_at ASC
+    `).all(id) as any[]
+
+    // Get all payments for this supplier
+    const payments = db().prepare(`
+      SELECT sp.*, p.grn_number 
+      FROM supplier_payments sp
+      LEFT JOIN purchases p ON sp.purchase_id = p.id
+      WHERE sp.supplier_id = ?
+      ORDER BY sp.created_at ASC
+    `).all(id) as any[]
+
+    // Build unified chronological ledger with running balance
+    type LedgerEntry = {
+      date: string
+      type: 'purchase' | 'initial_payment' | 'payment'
+      description: string
+      debit: number    // amount owed (purchase)
+      credit: number   // amount paid
+      balance: number  // running balance
+      grn_number?: string
+      ref_id?: number
+    }
+
+    const events: { date: string; sortKey: string; entry: LedgerEntry }[] = []
+
+    for (const p of purchases) {
+      // Purchase debit entry
+      events.push({
+        date: p.created_at,
+        sortKey: p.created_at + '_a_purchase_' + p.id,
+        entry: {
+          date: p.created_at,
+          type: 'purchase',
+          description: `Purchase ${p.grn_number}${p.notes ? ' — ' + p.notes : ''}`,
+          debit: p.total_amount,
+          credit: 0,
+          balance: 0,
+          grn_number: p.grn_number,
+          ref_id: p.id
+        }
+      })
+      // Initial payment at time of GRN
+      if (p.paid_amount > 0) {
+        events.push({
+          date: p.created_at,
+          sortKey: p.created_at + '_b_initpay_' + p.id,
+          entry: {
+            date: p.created_at,
+            type: 'initial_payment',
+            description: `Paid at time of ${p.grn_number}`,
+            debit: 0,
+            credit: p.paid_amount,
+            balance: 0,
+            grn_number: p.grn_number,
+            ref_id: p.id
+          }
+        })
+      }
+    }
+
+    // Add subsequent payments (exclude initial GRN payments already counted)
+    for (const pay of payments) {
+      events.push({
+        date: pay.created_at,
+        sortKey: pay.created_at + '_c_payment_' + pay.id,
+        entry: {
+          date: pay.created_at,
+          type: 'payment',
+          description: `Payment${pay.grn_number ? ' (ref ' + pay.grn_number + ')' : ''}${pay.notes ? ' — ' + pay.notes : ''}`,
+          debit: 0,
+          credit: pay.amount,
+          balance: 0,
+          ref_id: pay.id
+        }
+      })
+    }
+
+    // Sort all events chronologically
+    events.sort((a, b) => a.sortKey.localeCompare(b.sortKey))
+
+    // Compute running balance
+    let runningBalance = 0
+    const ledger: LedgerEntry[] = events.map(ev => {
+      runningBalance += ev.entry.debit - ev.entry.credit
+      return { ...ev.entry, balance: runningBalance }
+    })
+
+    return { supplier, ledger, purchases, payments }
   })
 
   ipcMain.handle('create-supplier', (_, data: any) => {

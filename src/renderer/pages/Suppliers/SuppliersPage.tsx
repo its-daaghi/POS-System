@@ -224,34 +224,69 @@ export default function SuppliersPage() {
       </Modal>
 
       {/* Detail Modal */}
-      <Modal isOpen={showDetail} onClose={() => setShowDetail(false)} title={`📋 ${selected?.name}`} size="xl">
+      <Modal isOpen={showDetail} onClose={() => setShowDetail(false)} title={`📋 ${selected?.name} — Ledger`} size="xl">
         {detail && (
           <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-semibold text-white mb-2">Recent Purchases</h4>
-                <div className="space-y-2">
-                  {detail.purchases?.slice(0,10).map((p:any) => (
-                    <div key={p.id} className="flex justify-between text-sm p-2 bg-dark-700 rounded-lg">
-                      <span className="text-primary-400 font-mono">{p.grn_number}</span>
-                      <span className="text-white">{fmt(p.total_amount)}</span>
-                      <span className="text-xs text-gray-500">{formatDate(p.created_at)}</span>
-                    </div>
-                  ))}
-                </div>
+            {/* Summary bar */}
+            <div className="grid grid-cols-3 gap-3">
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Purchased</p>
+                <p className="text-lg font-bold text-white">{fmt(detail.purchases?.reduce((s:number,p:any)=>s+p.total_amount,0)||0)}</p>
               </div>
-              <div>
-                <h4 className="font-semibold text-white mb-2">Payment History</h4>
-                <div className="space-y-2">
-                  {detail.payments?.slice(0,10).map((p:any) => (
-                    <div key={p.id} className="flex justify-between text-sm p-2 bg-dark-700 rounded-lg">
-                      <span className="text-emerald-400 font-bold">{fmt(p.amount)}</span>
-                      <span className="text-xs text-gray-500">{p.notes||'-'}</span>
-                      <span className="text-xs text-gray-500">{formatDate(p.created_at)}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Paid</p>
+                <p className="text-lg font-bold text-emerald-400">{fmt(detail.purchases?.reduce((s:number,p:any)=>s+p.paid_amount,0)||0 + detail.payments?.reduce((s:number,p:any)=>s+p.amount,0)||0)}</p>
               </div>
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Balance Remaining</p>
+                <p className={`text-lg font-bold ${detail.supplier?.current_balance > 0 ? 'text-red-400' : 'text-emerald-400'}`}>{fmt(detail.supplier?.current_balance||0)}</p>
+              </div>
+            </div>
+
+            {/* Ledger table */}
+            <div className="table-container">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th className="text-right">Debit (Owed)</th>
+                    <th className="text-right">Credit (Paid)</th>
+                    <th className="text-right">Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {detail.ledger?.length === 0 && (
+                    <tr><td colSpan={5} className="text-center py-8 text-gray-500">No transactions yet</td></tr>
+                  )}
+                  {detail.ledger?.map((entry: any, i: number) => (
+                    <tr key={i}>
+                      <td className="text-xs text-gray-400 whitespace-nowrap">{formatDate(entry.date)}</td>
+                      <td>
+                        <div className="flex items-center gap-2">
+                          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+                            entry.type === 'purchase' ? 'bg-blue-900/40 text-blue-400' :
+                            entry.type === 'initial_payment' ? 'bg-emerald-900/40 text-emerald-400' :
+                            'bg-purple-900/40 text-purple-400'
+                          }`}>
+                            {entry.type === 'purchase' ? '📦 Purchase' : entry.type === 'initial_payment' ? '💵 Advance' : '💳 Payment'}
+                          </span>
+                          <span className="text-sm text-gray-300">{entry.description}</span>
+                        </div>
+                      </td>
+                      <td className="text-right font-medium text-red-400">
+                        {entry.debit > 0 ? fmt(entry.debit) : '—'}
+                      </td>
+                      <td className="text-right font-medium text-emerald-400">
+                        {entry.credit > 0 ? fmt(entry.credit) : '—'}
+                      </td>
+                      <td className={`text-right font-bold ${entry.balance > 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                        {fmt(entry.balance)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         )}
