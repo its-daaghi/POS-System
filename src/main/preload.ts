@@ -36,6 +36,7 @@ contextBridge.exposeInMainWorld('api', {
   deleteCustomer: (id: number) => ipcRenderer.invoke('delete-customer', id),
   getCustomerLedger: (id: number) => ipcRenderer.invoke('get-customer-ledger', id),
   addCreditPayment: (data: any) => ipcRenderer.invoke('add-credit-payment', data),
+  getTotalOutstanding: () => ipcRenderer.invoke('get-total-outstanding'),
 
   // Suppliers
   getSuppliers: (filters?: any) => ipcRenderer.invoke('get-suppliers', filters),

@@ -80,4 +80,8 @@ export function registerCustomerHandlers() {
     })
     return addPayment()
   })
+  ipcMain.handle('get-total-outstanding', (_) => {
+    const result = db().prepare('SELECT COALESCE(SUM(current_balance),0) as total FROM customers WHERE current_balance > 0').get() as any
+    return result?.total || 0
+  })
 }

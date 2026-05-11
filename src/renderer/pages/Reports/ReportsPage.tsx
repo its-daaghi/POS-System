@@ -15,6 +15,7 @@ export default function ReportsPage() {
   const [endDate, setEndDate] = useState(todayStr())
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState<any>(null)
+  const [totalOutstanding, setTotalOutstanding] = useState(0)
   const [eodDate, setEodDate] = useState(todayStr())
   const currency = useSettingsStore(s => s.get('currency_symbol', '₨'))
   const storeName = useSettingsStore(s => s.get('store_name', 'My Store'))
@@ -32,6 +33,8 @@ export default function ReportsPage() {
       else if (tab === 'top') setData(await window.api.getTopProducts(filters))
       else if (tab === 'credit') setData(await window.api.getCreditReport())
       else if (tab === 'eod') setData(await window.api.getEndOfDayReport(eodDate))
+      
+      setTotalOutstanding(await window.api.getTotalOutstanding())
     } catch (error: any) {
       console.error('Failed to load report:', error)
       toast.error(error.message || 'Failed to load report')
@@ -77,9 +80,15 @@ export default function ReportsPage() {
     <div className="space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">📈 Reports</h1>
-        <div className="flex gap-2">
-          <button onClick={exportPDF} className="btn-danger btn-sm">📄 Export PDF</button>
-          <button onClick={exportExcel} className="btn-success btn-sm">📊 Export Excel</button>
+        <div className="flex items-center gap-4">
+          <div className="bg-red-900/30 border border-red-800 px-4 py-2 rounded-xl text-center">
+            <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Remaining (Udhaar)</p>
+            <p className="text-lg font-bold text-red-400">{fmt(totalOutstanding)}</p>
+          </div>
+          <div className="flex gap-2">
+            <button onClick={exportPDF} className="btn-danger btn-sm">📄 PDF</button>
+            <button onClick={exportExcel} className="btn-success btn-sm">📊 Excel</button>
+          </div>
         </div>
       </div>
 
