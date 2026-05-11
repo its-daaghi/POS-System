@@ -109,7 +109,7 @@ export default function ReportsPage() {
 
       {loading ? <div className="text-center py-20 text-gray-400">⏳ Loading...</div> : (
         <>
-          {tab === 'sales' && data && (
+          {tab === 'sales' && data && !Array.isArray(data) && 'summary' in data && (
             <div className="space-y-4">
               <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
                 {[
@@ -152,7 +152,7 @@ export default function ReportsPage() {
             </div>
           )}
 
-          {tab === 'pl' && data && (
+          {tab === 'pl' && data && !Array.isArray(data) && 'grossProfit' in data && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div className="card space-y-3">
                 <h3 className="font-semibold text-white">Profit & Loss Summary</h3>
@@ -183,7 +183,7 @@ export default function ReportsPage() {
             </div>
           )}
 
-          {tab === 'inventory' && data && (
+          {tab === 'inventory' && Array.isArray(data) && (
             <div className="space-y-3">
               <div className="grid grid-cols-3 gap-3">
                 <div className="card text-center"><p className="text-xs text-gray-400">Total Products</p><p className="text-2xl font-bold text-white">{data.length}</p></div>
@@ -211,7 +211,7 @@ export default function ReportsPage() {
             </div>
           )}
 
-          {tab === 'top' && data && (
+          {tab === 'top' && Array.isArray(data) && (
             <div className="table-container">
               <table className="table">
                 <thead><tr><th>#</th><th>Product</th><th>Qty Sold</th><th>Revenue</th><th>Cost</th><th>Profit</th></tr></thead>
@@ -231,7 +231,7 @@ export default function ReportsPage() {
             </div>
           )}
 
-          {tab === 'credit' && data && (
+          {tab === 'credit' && Array.isArray(data) && (
             <div className="space-y-3">
               <div className="card flex gap-4">
                 <div><p className="text-xs text-gray-400">Total Outstanding</p><p className="text-2xl font-bold text-red-400">{fmt(data.reduce((s:number,c:any)=>s+(c.current_balance||0),0))}</p></div>
@@ -255,7 +255,7 @@ export default function ReportsPage() {
             </div>
           )}
 
-          {tab === 'eod' && data && (
+          {tab === 'eod' && data && !Array.isArray(data) && 'sales' in data && (
             <div className="space-y-4">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
                 {[
