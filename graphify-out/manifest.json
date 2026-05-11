@@ -12,11 +12,11 @@
     "hash": "5a3c72deea375cf1d5cef732cfce9dcd"
   },
   "E:\\POS System\\dist-electron\\main\\index.js": {
-    "mtime": 1777403114.8500648,
+    "mtime": 1778479684.098394,
     "hash": "0a439423f2b1439d4898998ee57533c5"
   },
   "E:\\POS System\\dist-electron\\preload\\preload.js": {
-    "mtime": 1777403110.2321608,
+    "mtime": 1778479678.3773394,
     "hash": "66a37b707c3ad27a68f5466f9c032a87"
   },
   "E:\\POS System\\src\\database\\connection.ts": {
@@ -124,8 +124,8 @@
     "hash": "9e0f8d051e6af8ed1befac9c608c8f0b"
   },
   "E:\\POS System\\src\\renderer\\pages\\Reports\\ReportsPage.tsx": {
-    "mtime": 1777275209.8312957,
-    "hash": "fb5d44b361b8e0dd01bb4c508ad3e51b"
+    "mtime": 1778480912.6084995,
+    "hash": "d66d23ba877ce467551a193dea23b221"
   },
   "E:\\POS System\\src\\renderer\\pages\\Settings\\SettingsPage.tsx": {
     "mtime": 1777275323.2652605,
@@ -152,8 +152,8 @@
     "hash": "b36b15faa1107adb77271796b6cffb81"
   },
   "E:\\POS System\\src\\renderer\\utils\\currency.ts": {
-    "mtime": 1777274636.9025939,
-    "hash": "7624a8ecf464affcd31a8b6886e188ad"
+    "mtime": 1778480776.665547,
+    "hash": "661ca6b23927c4397e8023d2650f919a"
   },
   "E:\\POS System\\README.md": {
     "mtime": 1777275372.444234,

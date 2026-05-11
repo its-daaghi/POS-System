@@ -207,7 +207,7 @@
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "dist_electron_preload_preload_js",
-      "community": 11,
+      "community": 10,
       "norm_label": "preload.js"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L2",
       "id": "preload_preload_electron",
-      "community": 11,
+      "community": 10,
       "norm_label": "electron"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L1",
       "id": "src_renderer_app_tsx",
-      "community": 7,
+      "community": 4,
       "norm_label": "app.tsx"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L17",
       "id": "renderer_app_requireauth",
-      "community": 7,
+      "community": 4,
       "norm_label": "requireauth()"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L23",
       "id": "renderer_app_app",
-      "community": 7,
+      "community": 4,
       "norm_label": "app()"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/renderer/main.tsx",
       "source_location": "L1",
       "id": "src_renderer_main_tsx",
-      "community": 7,
+      "community": 4,
       "norm_label": "main.tsx"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_layout_layout_tsx",
-      "community": 5,
+      "community": 4,
       "norm_label": "layout.tsx"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L6",
       "id": "layout_layout_layout",
-      "community": 5,
+      "community": 4,
       "norm_label": "layout()"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_modal_modal_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "modal.tsx"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L3",
       "id": "modal_modal_modalprops",
-      "community": 4,
+      "community": 5,
       "norm_label": "modalprops"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L12",
       "id": "modal_modal_sizeclasses",
-      "community": 4,
+      "community": 5,
       "norm_label": "sizeclasses"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L20",
       "id": "modal_modal_modal",
-      "community": 4,
+      "community": 5,
       "norm_label": "modal()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L1",
       "id": "src_renderer_components_topbar_topbar_tsx",
-      "community": 5,
+      "community": 4,
       "norm_label": "topbar.tsx"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L5",
       "id": "topbar_topbar_pagetitles",
-      "community": 5,
+      "community": 4,
       "norm_label": "pagetitles"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L16",
       "id": "topbar_topbar_topbar",
-      "community": 5,
+      "community": 4,
       "norm_label": "topbar()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L1",
       "id": "src_renderer_dist_electron_preload_preload_js",
-      "community": 11,
+      "community": 10,
       "norm_label": "preload.js"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_login_loginpage_tsx",
-      "community": 7,
+      "community": 4,
       "norm_label": "loginpage.tsx"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L6",
       "id": "login_loginpage_loginpage",
-      "community": 7,
+      "community": 4,
       "norm_label": "loginpage()"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_pos_pospage_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "pospage.tsx"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L9",
       "id": "pos_pospage_pospage",
-      "community": 4,
+      "community": 5,
       "norm_label": "pospage()"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_products_productspage_tsx",
-      "community": 10,
+      "community": 6,
       "norm_label": "productspage.tsx"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L9",
       "id": "products_productspage_units",
-      "community": 10,
+      "community": 6,
       "norm_label": "units"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L10",
       "id": "products_productspage_emptyform",
-      "community": 10,
+      "community": 6,
       "norm_label": "emptyform"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L12",
       "id": "products_productspage_productspage",
-      "community": 10,
+      "community": 6,
       "norm_label": "productspage()"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_settings_settingspage_tsx",
-      "community": 9,
+      "community": 7,
       "norm_label": "settingspage.tsx"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L7",
       "id": "settings_settingspage_tabs",
-      "community": 9,
+      "community": 7,
       "norm_label": "tabs"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L8",
       "id": "settings_settingspage_tab",
-      "community": 9,
+      "community": 7,
       "norm_label": "tab"
     },
     {
@@ -846,7 +846,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L10",
       "id": "settings_settingspage_emptyuser",
-      "community": 9,
+      "community": 7,
       "norm_label": "emptyuser"
     },
     {
@@ -855,7 +855,7 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L12",
       "id": "settings_settingspage_settingspage",
-      "community": 9,
+      "community": 7,
       "norm_label": "settingspage()"
     },
     {
@@ -864,7 +864,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L1",
       "id": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "community": 6,
+      "community": 11,
       "norm_label": "supplierspage.tsx"
     },
     {
@@ -873,7 +873,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L8",
       "id": "suppliers_supplierspage_emptysupplier",
-      "community": 6,
+      "community": 11,
       "norm_label": "emptysupplier"
     },
     {
@@ -882,7 +882,7 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L10",
       "id": "suppliers_supplierspage_supplierspage",
-      "community": 6,
+      "community": 11,
       "norm_label": "supplierspage()"
     },
     {
@@ -891,7 +891,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_authstore_ts",
-      "community": 5,
+      "community": 9,
       "norm_label": "authstore.ts"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L4",
       "id": "store_authstore_user",
-      "community": 5,
+      "community": 9,
       "norm_label": "user"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L11",
       "id": "store_authstore_authstate",
-      "community": 5,
+      "community": 9,
       "norm_label": "authstate"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L19",
       "id": "store_authstore_rolepermissions",
-      "community": 5,
+      "community": 9,
       "norm_label": "rolepermissions"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L25",
       "id": "store_authstore_useauthstore",
-      "community": 7,
+      "community": 4,
       "norm_label": "useauthstore"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L1",
       "id": "src_renderer_store_cartstore_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "cartstore.ts"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L3",
       "id": "store_cartstore_cartitem",
-      "community": 4,
+      "community": 5,
       "norm_label": "cartitem"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L17",
       "id": "store_cartstore_cartstate",
-      "community": 4,
+      "community": 5,
       "norm_label": "cartstate"
     },
     {
@@ -963,7 +963,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L45",
       "id": "store_cartstore_usecartstore",
-      "community": 4,
+      "community": 5,
       "norm_label": "usecartstore"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L154",
       "id": "store_cartstore_calcitemtotal",
-      "community": 4,
+      "community": 5,
       "norm_label": "calcitemtotal()"
     },
     {
@@ -1033,7 +1033,7 @@
       "label": "formatCurrency()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L2",
+      "source_location": "L1",
       "id": "utils_currency_formatcurrency",
       "community": 3,
       "norm_label": "formatcurrency()"
@@ -1051,7 +1051,7 @@
       "label": "formatDate()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L10",
+      "source_location": "L13",
       "id": "utils_currency_formatdate",
       "community": 3,
       "norm_label": "formatdate()"
@@ -1060,7 +1060,7 @@
       "label": "formatDateTime()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L15",
+      "source_location": "L18",
       "id": "utils_currency_formatdatetime",
       "community": 8,
       "norm_label": "formatdatetime()"
@@ -1069,7 +1069,7 @@
       "label": "todayStr()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L20",
+      "source_location": "L23",
       "id": "utils_currency_todaystr",
       "community": 3,
       "norm_label": "todaystr()"
@@ -1078,7 +1078,7 @@
       "label": "yesterday()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L24",
+      "source_location": "L27",
       "id": "utils_currency_yesterday",
       "community": 3,
       "norm_label": "yesterday()"
@@ -1087,7 +1087,7 @@
       "label": "startOfMonth()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L28",
+      "source_location": "L31",
       "id": "utils_currency_startofmonth",
       "community": 3,
       "norm_label": "startofmonth()"
@@ -1096,7 +1096,7 @@
       "label": "percentChange()",
       "file_type": "code",
       "source_file": "src/renderer/utils/currency.ts",
-      "source_location": "L33",
+      "source_location": "L36",
       "id": "utils_currency_percentchange",
       "community": 3,
       "norm_label": "percentchange()"
@@ -1325,9 +1325,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_electron",
-      "confidence_score": 1.0
+      "target": "main_index_electron"
     },
     {
       "relation": "contains",
@@ -1335,9 +1335,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_path",
-      "confidence_score": 1.0
+      "target": "main_index_path"
     },
     {
       "relation": "contains",
@@ -1345,9 +1345,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_fs",
-      "confidence_score": 1.0
+      "target": "main_index_fs"
     },
     {
       "relation": "contains",
@@ -1355,9 +1355,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_database",
-      "confidence_score": 1.0
+      "target": "main_index_database"
     },
     {
       "relation": "contains",
@@ -1365,9 +1365,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_getdb",
-      "confidence_score": 1.0
+      "target": "main_index_getdb"
     },
     {
       "relation": "contains",
@@ -1375,9 +1375,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_initdatabase",
-      "confidence_score": 1.0
+      "target": "main_index_initdatabase"
     },
     {
       "relation": "contains",
@@ -1385,9 +1385,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_runmigrations",
-      "confidence_score": 1.0
+      "target": "main_index_runmigrations"
     },
     {
       "relation": "contains",
@@ -1395,9 +1395,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_seeddefaults",
-      "confidence_score": 1.0
+      "target": "main_index_seeddefaults"
     },
     {
       "relation": "contains",
@@ -1405,9 +1405,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registerproducthandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerproducthandlers"
     },
     {
       "relation": "contains",
@@ -1415,9 +1415,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L360",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registersalehandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersalehandlers"
     },
     {
       "relation": "contains",
@@ -1425,9 +1425,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L545",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registercustomerhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registercustomerhandlers"
     },
     {
       "relation": "contains",
@@ -1435,9 +1435,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L617",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registersupplierhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersupplierhandlers"
     },
     {
       "relation": "contains",
@@ -1445,9 +1445,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L723",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registerexpensehandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerexpensehandlers"
     },
     {
       "relation": "contains",
@@ -1455,9 +1455,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L771",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registeruserhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registeruserhandlers"
     },
     {
       "relation": "contains",
@@ -1465,9 +1465,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L836",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registersettingshandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersettingshandlers"
     },
     {
       "relation": "contains",
@@ -1475,9 +1475,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L857",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registerreporthandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerreporthandlers"
     },
     {
       "relation": "contains",
@@ -1485,9 +1485,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1019",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_registerstockhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerstockhandlers"
     },
     {
       "relation": "contains",
@@ -1495,9 +1495,9 @@
       "source_file": "dist-electron/main/index.js",
       "source_location": "L1045",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_main_index_js",
-      "target": "main_index_createwindow",
-      "confidence_score": 1.0
+      "target": "main_index_createwindow"
     },
     {
       "relation": "contains",
@@ -1505,9 +1505,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_electron",
-      "confidence_score": 1.0
+      "target": "main_index_electron"
     },
     {
       "relation": "contains",
@@ -1515,9 +1515,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_path",
-      "confidence_score": 1.0
+      "target": "main_index_path"
     },
     {
       "relation": "contains",
@@ -1525,9 +1525,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_fs",
-      "confidence_score": 1.0
+      "target": "main_index_fs"
     },
     {
       "relation": "contains",
@@ -1535,9 +1535,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_database",
-      "confidence_score": 1.0
+      "target": "main_index_database"
     },
     {
       "relation": "contains",
@@ -1545,9 +1545,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_getdb",
-      "confidence_score": 1.0
+      "target": "main_index_getdb"
     },
     {
       "relation": "calls",
@@ -1556,9 +1556,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_index_initdatabase",
-      "target": "main_index_runmigrations",
-      "confidence_score": 1.0
+      "target": "main_index_runmigrations"
     },
     {
       "relation": "calls",
@@ -1567,9 +1567,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_index_initdatabase",
-      "target": "main_index_seeddefaults",
-      "confidence_score": 1.0
+      "target": "main_index_seeddefaults"
     },
     {
       "relation": "contains",
@@ -1577,9 +1577,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_initdatabase",
-      "confidence_score": 1.0
+      "target": "main_index_initdatabase"
     },
     {
       "relation": "contains",
@@ -1587,9 +1587,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_runmigrations",
-      "confidence_score": 1.0
+      "target": "main_index_runmigrations"
     },
     {
       "relation": "contains",
@@ -1597,9 +1597,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_seeddefaults",
-      "confidence_score": 1.0
+      "target": "main_index_seeddefaults"
     },
     {
       "relation": "contains",
@@ -1607,9 +1607,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerproducthandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerproducthandlers"
     },
     {
       "relation": "contains",
@@ -1617,9 +1617,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L360",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersalehandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersalehandlers"
     },
     {
       "relation": "contains",
@@ -1627,9 +1627,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L545",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registercustomerhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registercustomerhandlers"
     },
     {
       "relation": "contains",
@@ -1637,9 +1637,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L606",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersupplierhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersupplierhandlers"
     },
     {
       "relation": "contains",
@@ -1647,9 +1647,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L712",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerexpensehandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerexpensehandlers"
     },
     {
       "relation": "contains",
@@ -1657,9 +1657,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L760",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registeruserhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registeruserhandlers"
     },
     {
       "relation": "contains",
@@ -1667,9 +1667,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L825",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registersettingshandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registersettingshandlers"
     },
     {
       "relation": "contains",
@@ -1677,9 +1677,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L846",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerreporthandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerreporthandlers"
     },
     {
       "relation": "contains",
@@ -1687,9 +1687,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L1008",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_registerstockhandlers",
-      "confidence_score": 1.0
+      "target": "main_index_registerstockhandlers"
     },
     {
       "relation": "contains",
@@ -1697,9 +1697,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "main_index_createwindow",
-      "confidence_score": 1.0
+      "target": "main_index_createwindow"
     },
     {
       "relation": "contains",
@@ -1707,9 +1707,9 @@
       "source_file": "src/renderer/dist-electron/main/index.js",
       "source_location": "L1034",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_main_index_js",
-      "target": "main_index_createwindow",
-      "confidence_score": 1.0
+      "target": "main_index_createwindow"
     },
     {
       "relation": "contains",
@@ -1717,9 +1717,9 @@
       "source_file": "dist-electron/preload/preload.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dist_electron_preload_preload_js",
-      "target": "preload_preload_electron",
-      "confidence_score": 1.0
+      "target": "preload_preload_electron"
     },
     {
       "relation": "contains",
@@ -1727,9 +1727,9 @@
       "source_file": "src/renderer/dist-electron/preload/preload.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_dist_electron_preload_preload_js",
-      "target": "preload_preload_electron",
-      "confidence_score": 1.0
+      "target": "preload_preload_electron"
     },
     {
       "relation": "contains",
@@ -1737,9 +1737,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_database_connection_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "contains",
@@ -1747,9 +1747,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_database_connection_ts",
-      "target": "database_connection_initdatabase",
-      "confidence_score": 1.0
+      "target": "database_connection_initdatabase"
     },
     {
       "relation": "contains",
@@ -1757,9 +1757,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_database_connection_ts",
-      "target": "database_connection_runmigrations",
-      "confidence_score": 1.0
+      "target": "database_connection_runmigrations"
     },
     {
       "relation": "contains",
@@ -1767,9 +1767,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_database_connection_ts",
-      "target": "database_connection_seeddefaults",
-      "confidence_score": 1.0
+      "target": "database_connection_seeddefaults"
     },
     {
       "relation": "imports_from",
@@ -1778,9 +1778,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1789,9 +1789,9 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_customers_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1800,9 +1800,9 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_expenses_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1811,9 +1811,9 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_products_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1822,9 +1822,9 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_reports_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1833,9 +1833,9 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_sales_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1844,9 +1844,9 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_settings_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1855,9 +1855,9 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_stock_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1866,9 +1866,9 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_suppliers_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports_from",
@@ -1877,9 +1877,9 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_users_ts",
-      "target": "src_database_connection_ts",
-      "confidence_score": 1.0
+      "target": "src_database_connection_ts"
     },
     {
       "relation": "imports",
@@ -1888,9 +1888,9 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_customers_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1899,9 +1899,9 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_expenses_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1910,9 +1910,9 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_products_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1921,9 +1921,9 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_reports_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1932,9 +1932,9 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_sales_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1943,9 +1943,9 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_settings_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1954,9 +1954,9 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_stock_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1965,9 +1965,9 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_suppliers_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "imports",
@@ -1976,9 +1976,9 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_users_ts",
-      "target": "database_connection_getdb",
-      "confidence_score": 1.0
+      "target": "database_connection_getdb"
     },
     {
       "relation": "calls",
@@ -1987,9 +1987,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "database_connection_initdatabase",
-      "target": "database_connection_runmigrations",
-      "confidence_score": 1.0
+      "target": "database_connection_runmigrations"
     },
     {
       "relation": "calls",
@@ -1998,9 +1998,9 @@
       "source_file": "src/database/connection.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "database_connection_initdatabase",
-      "target": "database_connection_seeddefaults",
-      "confidence_score": 1.0
+      "target": "database_connection_seeddefaults"
     },
     {
       "relation": "imports",
@@ -2009,9 +2009,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "database_connection_initdatabase",
-      "confidence_score": 1.0
+      "target": "database_connection_initdatabase"
     },
     {
       "relation": "imports_from",
@@ -2020,9 +2020,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_products_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_products_ts"
     },
     {
       "relation": "imports",
@@ -2031,9 +2031,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_products_registerproducthandlers",
-      "confidence_score": 1.0
+      "target": "ipc_products_registerproducthandlers"
     },
     {
       "relation": "imports_from",
@@ -2042,9 +2042,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_sales_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_sales_ts"
     },
     {
       "relation": "imports",
@@ -2053,9 +2053,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_sales_registersalehandlers",
-      "confidence_score": 1.0
+      "target": "ipc_sales_registersalehandlers"
     },
     {
       "relation": "imports_from",
@@ -2064,9 +2064,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_customers_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_customers_ts"
     },
     {
       "relation": "imports",
@@ -2075,9 +2075,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_customers_registercustomerhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_customers_registercustomerhandlers"
     },
     {
       "relation": "imports_from",
@@ -2086,9 +2086,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_suppliers_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_suppliers_ts"
     },
     {
       "relation": "imports",
@@ -2097,9 +2097,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_suppliers_registersupplierhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_suppliers_registersupplierhandlers"
     },
     {
       "relation": "imports_from",
@@ -2108,9 +2108,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_expenses_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_expenses_ts"
     },
     {
       "relation": "imports",
@@ -2119,9 +2119,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_expenses_registerexpensehandlers",
-      "confidence_score": 1.0
+      "target": "ipc_expenses_registerexpensehandlers"
     },
     {
       "relation": "imports_from",
@@ -2130,9 +2130,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_users_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_users_ts"
     },
     {
       "relation": "imports",
@@ -2141,9 +2141,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_users_registeruserhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_users_registeruserhandlers"
     },
     {
       "relation": "imports_from",
@@ -2152,9 +2152,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_settings_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_settings_ts"
     },
     {
       "relation": "imports",
@@ -2163,9 +2163,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_settings_registersettingshandlers",
-      "confidence_score": 1.0
+      "target": "ipc_settings_registersettingshandlers"
     },
     {
       "relation": "imports_from",
@@ -2174,9 +2174,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_reports_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_reports_ts"
     },
     {
       "relation": "imports",
@@ -2185,9 +2185,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_reports_registerreporthandlers",
-      "confidence_score": 1.0
+      "target": "ipc_reports_registerreporthandlers"
     },
     {
       "relation": "imports_from",
@@ -2196,9 +2196,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "src_main_ipc_stock_ts",
-      "confidence_score": 1.0
+      "target": "src_main_ipc_stock_ts"
     },
     {
       "relation": "imports",
@@ -2207,9 +2207,9 @@
       "source_file": "src/main/index.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_index_ts",
-      "target": "ipc_stock_registerstockhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_stock_registerstockhandlers"
     },
     {
       "relation": "contains",
@@ -2217,9 +2217,9 @@
       "source_file": "src/main/preload.ts",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_preload_ts",
-      "target": "main_preload_apitype",
-      "confidence_score": 1.0
+      "target": "main_preload_apitype"
     },
     {
       "relation": "contains",
@@ -2227,9 +2227,9 @@
       "source_file": "src/main/ipc/customers.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_customers_ts",
-      "target": "ipc_customers_registercustomerhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_customers_registercustomerhandlers"
     },
     {
       "relation": "contains",
@@ -2237,9 +2237,9 @@
       "source_file": "src/main/ipc/expenses.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_expenses_ts",
-      "target": "ipc_expenses_registerexpensehandlers",
-      "confidence_score": 1.0
+      "target": "ipc_expenses_registerexpensehandlers"
     },
     {
       "relation": "contains",
@@ -2247,9 +2247,9 @@
       "source_file": "src/main/ipc/products.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_products_ts",
-      "target": "ipc_products_registerproducthandlers",
-      "confidence_score": 1.0
+      "target": "ipc_products_registerproducthandlers"
     },
     {
       "relation": "contains",
@@ -2257,9 +2257,9 @@
       "source_file": "src/main/ipc/reports.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_reports_ts",
-      "target": "ipc_reports_registerreporthandlers",
-      "confidence_score": 1.0
+      "target": "ipc_reports_registerreporthandlers"
     },
     {
       "relation": "contains",
@@ -2267,9 +2267,9 @@
       "source_file": "src/main/ipc/sales.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_sales_ts",
-      "target": "ipc_sales_registersalehandlers",
-      "confidence_score": 1.0
+      "target": "ipc_sales_registersalehandlers"
     },
     {
       "relation": "contains",
@@ -2277,9 +2277,9 @@
       "source_file": "src/main/ipc/settings.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_settings_ts",
-      "target": "ipc_settings_registersettingshandlers",
-      "confidence_score": 1.0
+      "target": "ipc_settings_registersettingshandlers"
     },
     {
       "relation": "contains",
@@ -2287,9 +2287,9 @@
       "source_file": "src/main/ipc/stock.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_stock_ts",
-      "target": "ipc_stock_registerstockhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_stock_registerstockhandlers"
     },
     {
       "relation": "contains",
@@ -2297,9 +2297,9 @@
       "source_file": "src/main/ipc/suppliers.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_suppliers_ts",
-      "target": "ipc_suppliers_registersupplierhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_suppliers_registersupplierhandlers"
     },
     {
       "relation": "contains",
@@ -2307,9 +2307,9 @@
       "source_file": "src/main/ipc/users.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_ipc_users_ts",
-      "target": "ipc_users_registeruserhandlers",
-      "confidence_score": 1.0
+      "target": "ipc_users_registeruserhandlers"
     },
     {
       "relation": "imports_from",
@@ -2318,9 +2318,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -2329,9 +2329,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -2340,9 +2340,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -2351,9 +2351,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -2362,9 +2362,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_components_layout_layout_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_layout_layout_tsx"
     },
     {
       "relation": "imports_from",
@@ -2373,9 +2373,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_login_loginpage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_login_loginpage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2384,9 +2384,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_dashboard_dashboardpage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2395,9 +2395,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_pos_pospage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_pos_pospage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2406,9 +2406,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_products_productspage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_products_productspage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2417,9 +2417,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_customers_customerspage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_customers_customerspage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2428,9 +2428,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_suppliers_supplierspage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2439,9 +2439,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_reports_reportspage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_reports_reportspage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2450,9 +2450,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_expenses_expensespage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_expenses_expensespage_tsx"
     },
     {
       "relation": "imports_from",
@@ -2461,9 +2461,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "src_renderer_pages_settings_settingspage_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_pages_settings_settingspage_tsx"
     },
     {
       "relation": "contains",
@@ -2471,9 +2471,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "renderer_app_requireauth",
-      "confidence_score": 1.0
+      "target": "renderer_app_requireauth"
     },
     {
       "relation": "contains",
@@ -2481,9 +2481,9 @@
       "source_file": "src/renderer/App.tsx",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_app_tsx",
-      "target": "renderer_app_app",
-      "confidence_score": 1.0
+      "target": "renderer_app_app"
     },
     {
       "relation": "imports_from",
@@ -2492,9 +2492,9 @@
       "source_file": "src/renderer/main.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_main_tsx",
-      "target": "src_renderer_app_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_app_tsx"
     },
     {
       "relation": "calls",
@@ -2536,9 +2536,9 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_layout_layout_tsx",
-      "target": "src_renderer_components_sidebar_sidebar_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_sidebar_sidebar_tsx"
     },
     {
       "relation": "imports_from",
@@ -2547,9 +2547,9 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_layout_layout_tsx",
-      "target": "src_renderer_components_topbar_topbar_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_topbar_topbar_tsx"
     },
     {
       "relation": "contains",
@@ -2557,9 +2557,9 @@
       "source_file": "src/renderer/components/Layout/Layout.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_layout_layout_tsx",
-      "target": "layout_layout_layout",
-      "confidence_score": 1.0
+      "target": "layout_layout_layout"
     },
     {
       "relation": "contains",
@@ -2567,9 +2567,9 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_modal_modal_tsx",
-      "target": "modal_modal_modalprops",
-      "confidence_score": 1.0
+      "target": "modal_modal_modalprops"
     },
     {
       "relation": "contains",
@@ -2577,9 +2577,9 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_modal_modal_tsx",
-      "target": "modal_modal_sizeclasses",
-      "confidence_score": 1.0
+      "target": "modal_modal_sizeclasses"
     },
     {
       "relation": "contains",
@@ -2587,9 +2587,9 @@
       "source_file": "src/renderer/components/Modal/Modal.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_modal_modal_tsx",
-      "target": "modal_modal_modal",
-      "confidence_score": 1.0
+      "target": "modal_modal_modal"
     },
     {
       "relation": "imports_from",
@@ -2598,9 +2598,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2609,9 +2609,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2620,9 +2620,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2631,9 +2631,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2642,9 +2642,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2653,9 +2653,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "src_renderer_components_modal_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_renderer_components_modal_modal_tsx"
     },
     {
       "relation": "imports_from",
@@ -2664,9 +2664,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -2675,9 +2675,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -2686,9 +2686,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -2697,9 +2697,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "contains",
@@ -2707,9 +2707,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "sidebar_sidebar_navitems",
-      "confidence_score": 1.0
+      "target": "sidebar_sidebar_navitems"
     },
     {
       "relation": "contains",
@@ -2717,9 +2717,9 @@
       "source_file": "src/renderer/components/Sidebar/Sidebar.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_sidebar_sidebar_tsx",
-      "target": "sidebar_sidebar_sidebar",
-      "confidence_score": 1.0
+      "target": "sidebar_sidebar_sidebar"
     },
     {
       "relation": "calls",
@@ -2750,9 +2750,9 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_topbar_topbar_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -2761,9 +2761,9 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_topbar_topbar_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -2771,9 +2771,9 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_topbar_topbar_tsx",
-      "target": "topbar_topbar_pagetitles",
-      "confidence_score": 1.0
+      "target": "topbar_topbar_pagetitles"
     },
     {
       "relation": "contains",
@@ -2781,9 +2781,9 @@
       "source_file": "src/renderer/components/TopBar/TopBar.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_components_topbar_topbar_tsx",
-      "target": "topbar_topbar_topbar",
-      "confidence_score": 1.0
+      "target": "topbar_topbar_topbar"
     },
     {
       "relation": "calls",
@@ -2803,9 +2803,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -2814,9 +2814,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -2825,9 +2825,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "imports",
@@ -2836,9 +2836,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "utils_currency_formatdatetime",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdatetime"
     },
     {
       "relation": "imports_from",
@@ -2847,9 +2847,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -2858,9 +2858,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -2869,9 +2869,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -2880,9 +2880,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -2890,9 +2890,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "customers_customerspage_emptyform",
-      "confidence_score": 1.0
+      "target": "customers_customerspage_emptyform"
     },
     {
       "relation": "contains",
@@ -2900,9 +2900,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "customers_customerspage_emptypayment",
-      "confidence_score": 1.0
+      "target": "customers_customerspage_emptypayment"
     },
     {
       "relation": "contains",
@@ -2910,9 +2910,9 @@
       "source_file": "src/renderer/pages/Customers/CustomersPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_customers_customerspage_tsx",
-      "target": "customers_customerspage_customerspage",
-      "confidence_score": 1.0
+      "target": "customers_customerspage_customerspage"
     },
     {
       "relation": "calls",
@@ -2943,9 +2943,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -2954,9 +2954,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -2965,9 +2965,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "utils_currency_percentchange",
-      "confidence_score": 1.0
+      "target": "utils_currency_percentchange"
     },
     {
       "relation": "imports_from",
@@ -2976,9 +2976,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -2987,9 +2987,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "contains",
@@ -2997,9 +2997,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "dashboard_dashboardpage_statcard",
-      "confidence_score": 1.0
+      "target": "dashboard_dashboardpage_statcard"
     },
     {
       "relation": "contains",
@@ -3007,9 +3007,9 @@
       "source_file": "src/renderer/pages/Dashboard/DashboardPage.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_dashboard_dashboardpage_tsx",
-      "target": "dashboard_dashboardpage_dashboardpage",
-      "confidence_score": 1.0
+      "target": "dashboard_dashboardpage_dashboardpage"
     },
     {
       "relation": "calls",
@@ -3040,9 +3040,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -3051,9 +3051,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -3062,9 +3062,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "imports",
@@ -3073,9 +3073,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "utils_currency_todaystr",
-      "confidence_score": 1.0
+      "target": "utils_currency_todaystr"
     },
     {
       "relation": "imports_from",
@@ -3084,9 +3084,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3095,9 +3095,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -3106,9 +3106,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3117,9 +3117,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3127,9 +3127,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "expenses_expensespage_emptyform",
-      "confidence_score": 1.0
+      "target": "expenses_expensespage_emptyform"
     },
     {
       "relation": "contains",
@@ -3137,9 +3137,9 @@
       "source_file": "src/renderer/pages/Expenses/ExpensesPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_expenses_expensespage_tsx",
-      "target": "expenses_expensespage_expensespage",
-      "confidence_score": 1.0
+      "target": "expenses_expensespage_expensespage"
     },
     {
       "relation": "calls",
@@ -3181,9 +3181,9 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_login_loginpage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3192,9 +3192,9 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_login_loginpage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3202,9 +3202,9 @@
       "source_file": "src/renderer/pages/Login/LoginPage.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_login_loginpage_tsx",
-      "target": "login_loginpage_loginpage",
-      "confidence_score": 1.0
+      "target": "login_loginpage_loginpage"
     },
     {
       "relation": "calls",
@@ -3224,9 +3224,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "src_renderer_store_cartstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_cartstore_ts"
     },
     {
       "relation": "imports",
@@ -3235,9 +3235,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "store_cartstore_usecartstore",
-      "confidence_score": 1.0
+      "target": "store_cartstore_usecartstore"
     },
     {
       "relation": "imports_from",
@@ -3246,9 +3246,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3257,9 +3257,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -3268,9 +3268,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3279,9 +3279,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -3290,9 +3290,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -3301,9 +3301,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "contains",
@@ -3311,9 +3311,9 @@
       "source_file": "src/renderer/pages/POS/POSPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_pos_pospage_tsx",
-      "target": "pos_pospage_pospage",
-      "confidence_score": 1.0
+      "target": "pos_pospage_pospage"
     },
     {
       "relation": "calls",
@@ -3355,9 +3355,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -3366,9 +3366,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -3377,9 +3377,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "imports_from",
@@ -3388,9 +3388,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3399,9 +3399,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -3410,9 +3410,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3421,9 +3421,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3431,9 +3431,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "products_productspage_units",
-      "confidence_score": 1.0
+      "target": "products_productspage_units"
     },
     {
       "relation": "contains",
@@ -3441,9 +3441,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "products_productspage_emptyform",
-      "confidence_score": 1.0
+      "target": "products_productspage_emptyform"
     },
     {
       "relation": "contains",
@@ -3451,9 +3451,9 @@
       "source_file": "src/renderer/pages/Products/ProductsPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_products_productspage_tsx",
-      "target": "products_productspage_productspage",
-      "confidence_score": 1.0
+      "target": "products_productspage_productspage"
     },
     {
       "relation": "calls",
@@ -3484,9 +3484,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -3495,9 +3495,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -3506,9 +3506,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "imports",
@@ -3517,9 +3517,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "utils_currency_todaystr",
-      "confidence_score": 1.0
+      "target": "utils_currency_todaystr"
     },
     {
       "relation": "imports",
@@ -3528,9 +3528,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "utils_currency_startofmonth",
-      "confidence_score": 1.0
+      "target": "utils_currency_startofmonth"
     },
     {
       "relation": "imports_from",
@@ -3539,9 +3539,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3550,9 +3550,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "contains",
@@ -3560,9 +3560,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "reports_reportspage_tabs",
-      "confidence_score": 1.0
+      "target": "reports_reportspage_tabs"
     },
     {
       "relation": "contains",
@@ -3570,9 +3570,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "reports_reportspage_tab",
-      "confidence_score": 1.0
+      "target": "reports_reportspage_tab"
     },
     {
       "relation": "contains",
@@ -3580,9 +3580,9 @@
       "source_file": "src/renderer/pages/Reports/ReportsPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_reports_reportspage_tsx",
-      "target": "reports_reportspage_reportspage",
-      "confidence_score": 1.0
+      "target": "reports_reportspage_reportspage"
     },
     {
       "relation": "calls",
@@ -3624,9 +3624,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3635,9 +3635,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -3646,9 +3646,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3657,9 +3657,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3667,9 +3667,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "settings_settingspage_tabs",
-      "confidence_score": 1.0
+      "target": "settings_settingspage_tabs"
     },
     {
       "relation": "contains",
@@ -3677,9 +3677,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "settings_settingspage_tab",
-      "confidence_score": 1.0
+      "target": "settings_settingspage_tab"
     },
     {
       "relation": "contains",
@@ -3687,9 +3687,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "settings_settingspage_emptyuser",
-      "confidence_score": 1.0
+      "target": "settings_settingspage_emptyuser"
     },
     {
       "relation": "contains",
@@ -3697,9 +3697,9 @@
       "source_file": "src/renderer/pages/Settings/SettingsPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_settings_settingspage_tsx",
-      "target": "settings_settingspage_settingspage",
-      "confidence_score": 1.0
+      "target": "settings_settingspage_settingspage"
     },
     {
       "relation": "calls",
@@ -3730,9 +3730,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "src_renderer_utils_currency_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_utils_currency_ts"
     },
     {
       "relation": "imports",
@@ -3741,9 +3741,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "imports",
@@ -3752,9 +3752,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "imports_from",
@@ -3763,9 +3763,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "src_renderer_store_settingsstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_settingsstore_ts"
     },
     {
       "relation": "imports",
@@ -3774,9 +3774,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "imports_from",
@@ -3785,9 +3785,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "src_renderer_store_authstore_ts",
-      "confidence_score": 1.0
+      "target": "src_renderer_store_authstore_ts"
     },
     {
       "relation": "imports",
@@ -3796,9 +3796,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3806,9 +3806,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "suppliers_supplierspage_emptysupplier",
-      "confidence_score": 1.0
+      "target": "suppliers_supplierspage_emptysupplier"
     },
     {
       "relation": "contains",
@@ -3816,9 +3816,9 @@
       "source_file": "src/renderer/pages/Suppliers/SuppliersPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_pages_suppliers_supplierspage_tsx",
-      "target": "suppliers_supplierspage_supplierspage",
-      "confidence_score": 1.0
+      "target": "suppliers_supplierspage_supplierspage"
     },
     {
       "relation": "calls",
@@ -3848,9 +3848,9 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_authstore_ts",
-      "target": "store_authstore_user",
-      "confidence_score": 1.0
+      "target": "store_authstore_user"
     },
     {
       "relation": "contains",
@@ -3858,9 +3858,9 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_authstore_ts",
-      "target": "store_authstore_authstate",
-      "confidence_score": 1.0
+      "target": "store_authstore_authstate"
     },
     {
       "relation": "contains",
@@ -3868,9 +3868,9 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_authstore_ts",
-      "target": "store_authstore_rolepermissions",
-      "confidence_score": 1.0
+      "target": "store_authstore_rolepermissions"
     },
     {
       "relation": "contains",
@@ -3878,9 +3878,9 @@
       "source_file": "src/renderer/store/authStore.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_authstore_ts",
-      "target": "store_authstore_useauthstore",
-      "confidence_score": 1.0
+      "target": "store_authstore_useauthstore"
     },
     {
       "relation": "contains",
@@ -3888,9 +3888,9 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_cartstore_ts",
-      "target": "store_cartstore_cartitem",
-      "confidence_score": 1.0
+      "target": "store_cartstore_cartitem"
     },
     {
       "relation": "contains",
@@ -3898,9 +3898,9 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_cartstore_ts",
-      "target": "store_cartstore_cartstate",
-      "confidence_score": 1.0
+      "target": "store_cartstore_cartstate"
     },
     {
       "relation": "contains",
@@ -3908,9 +3908,9 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_cartstore_ts",
-      "target": "store_cartstore_usecartstore",
-      "confidence_score": 1.0
+      "target": "store_cartstore_usecartstore"
     },
     {
       "relation": "contains",
@@ -3918,9 +3918,9 @@
       "source_file": "src/renderer/store/cartStore.ts",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_cartstore_ts",
-      "target": "store_cartstore_calcitemtotal",
-      "confidence_score": 1.0
+      "target": "store_cartstore_calcitemtotal"
     },
     {
       "relation": "contains",
@@ -3928,9 +3928,9 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_settingsstore_ts",
-      "target": "store_settingsstore_settingsstate",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_settingsstate"
     },
     {
       "relation": "contains",
@@ -3938,9 +3938,9 @@
       "source_file": "src/renderer/store/settingsStore.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_store_settingsstore_ts",
-      "target": "store_settingsstore_usesettingsstore",
-      "confidence_score": 1.0
+      "target": "store_settingsstore_usesettingsstore"
     },
     {
       "relation": "contains",
@@ -3948,9 +3948,9 @@
       "source_file": "src/renderer/types/global.d.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_types_global_d_ts",
-      "target": "types_global_d_window",
-      "confidence_score": 1.0
+      "target": "types_global_d_window"
     },
     {
       "relation": "contains",
@@ -3958,9 +3958,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_formatcurrency",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatcurrency"
     },
     {
       "relation": "contains",
@@ -3968,9 +3968,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_formatnumber",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatnumber"
     },
     {
       "relation": "contains",
@@ -3978,9 +3978,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdate"
     },
     {
       "relation": "contains",
@@ -3988,9 +3988,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_formatdatetime",
-      "confidence_score": 1.0
+      "target": "utils_currency_formatdatetime"
     },
     {
       "relation": "contains",
@@ -3998,9 +3998,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_todaystr",
-      "confidence_score": 1.0
+      "target": "utils_currency_todaystr"
     },
     {
       "relation": "contains",
@@ -4008,9 +4008,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_yesterday",
-      "confidence_score": 1.0
+      "target": "utils_currency_yesterday"
     },
     {
       "relation": "contains",
@@ -4018,9 +4018,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_startofmonth",
-      "confidence_score": 1.0
+      "target": "utils_currency_startofmonth"
     },
     {
       "relation": "contains",
@@ -4028,9 +4028,9 @@
       "source_file": "src/renderer/utils/currency.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_renderer_utils_currency_ts",
-      "target": "utils_currency_percentchange",
-      "confidence_score": 1.0
+      "target": "utils_currency_percentchange"
     },
     {
       "relation": "contains",
@@ -4038,9 +4038,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale"
     },
     {
       "relation": "contains",
@@ -4048,9 +4048,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_quick_start",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_quick_start"
     },
     {
       "relation": "contains",
@@ -4058,9 +4058,9 @@
       "source_file": "README.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_default_login",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_default_login"
     },
     {
       "relation": "contains",
@@ -4068,9 +4068,9 @@
       "source_file": "README.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_features",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_features"
     },
     {
       "relation": "contains",
@@ -4078,9 +4078,9 @@
       "source_file": "README.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_pos_keyboard_shortcuts",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_pos_keyboard_shortcuts"
     },
     {
       "relation": "contains",
@@ -4088,9 +4088,9 @@
       "source_file": "README.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_database",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_database"
     },
     {
       "relation": "contains",
@@ -4098,9 +4098,9 @@
       "source_file": "README.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_project_structure",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_project_structure"
     },
     {
       "relation": "contains",
@@ -4108,9 +4108,9 @@
       "source_file": "README.md",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_tech_stack",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_tech_stack"
     },
     {
       "relation": "contains",
@@ -4118,9 +4118,9 @@
       "source_file": "README.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_receipt_printing",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_receipt_printing"
     },
     {
       "relation": "contains",
@@ -4128,9 +4128,9 @@
       "source_file": "README.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_csv_product_import_format",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_csv_product_import_format"
     },
     {
       "relation": "contains",
@@ -4138,9 +4138,9 @@
       "source_file": "README.md",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_build_package",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_build_package"
     },
     {
       "relation": "contains",
@@ -4148,9 +4148,9 @@
       "source_file": "README.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_user_roles",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_user_roles"
     },
     {
       "relation": "contains",
@@ -4158,9 +4158,9 @@
       "source_file": "README.md",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_security_notes",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_security_notes"
     },
     {
       "relation": "contains",
@@ -4168,9 +4168,9 @@
       "source_file": "README.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_pos_system_full_featured_desktop_point_of_sale",
-      "target": "pos_system_readme_troubleshooting",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_troubleshooting"
     },
     {
       "relation": "contains",
@@ -4178,9 +4178,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_quick_start",
-      "target": "pos_system_readme_prerequisites",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_prerequisites"
     },
     {
       "relation": "contains",
@@ -4188,9 +4188,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_quick_start",
-      "target": "pos_system_readme_install_run",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_install_run"
     },
     {
       "relation": "contains",
@@ -4198,9 +4198,9 @@
       "source_file": "README.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_quick_start",
-      "target": "pos_system_readme_build_windows_installer_exe",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_build_windows_installer_exe"
     },
     {
       "relation": "contains",
@@ -4208,9 +4208,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_install_run",
-      "target": "pos_system_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -4218,9 +4218,9 @@
       "source_file": "README.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_build_windows_installer_exe",
-      "target": "pos_system_readme_codeblock_2",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_2"
     },
     {
       "relation": "contains",
@@ -4228,9 +4228,9 @@
       "source_file": "README.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_project_structure",
-      "target": "pos_system_readme_codeblock_3",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_3"
     },
     {
       "relation": "contains",
@@ -4238,9 +4238,9 @@
       "source_file": "README.md",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_csv_product_import_format",
-      "target": "pos_system_readme_codeblock_4",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_4"
     },
     {
       "relation": "contains",
@@ -4248,9 +4248,9 @@
       "source_file": "README.md",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_build_package",
-      "target": "pos_system_readme_codeblock_5",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_5"
     },
     {
       "relation": "contains",
@@ -4258,11 +4258,11 @@
       "source_file": "README.md",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pos_system_readme_troubleshooting",
-      "target": "pos_system_readme_codeblock_6",
-      "confidence_score": 1.0
+      "target": "pos_system_readme_codeblock_6"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "53c8deee4d91a60bc7609530d5919ba5ddb2e6b1"
+  "built_at_commit": "ac3ef7894c785aff97dff840d7facb6ad649229a"
 }
