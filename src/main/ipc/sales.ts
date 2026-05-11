@@ -75,8 +75,9 @@ export function registerSaleHandlers() {
           db().prepare(`
             INSERT INTO credit_payments (customer_id, sale_id, amount, payment_type, notes, user_id)
             VALUES (?, ?, ?, 'credit', ?, ?)
-          `).run(data.customer_id, saleId, creditAmount, data.user_id || null,
-            `Split sale — Advance: ${paidNow}, Balance due: ${creditAmount}`)
+          `).run(data.customer_id, saleId, creditAmount,
+            `Split sale \u2014 Advance: ${paidNow}, Balance due: ${creditAmount}`,
+            data.user_id || null)
           db().prepare('UPDATE customers SET current_balance = current_balance + ? WHERE id = ?')
             .run(creditAmount, data.customer_id)
         }
