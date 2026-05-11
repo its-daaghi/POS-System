@@ -46,8 +46,8 @@ export default function ReportsPage() {
 
   const exportPDF = () => {
     const doc = new jsPDF()
-    const sym = currency || 'Rs.'
-    // jsPDF doesn't support ₨ glyph — use safe formatting
+    // jsPDF default font doesn't support ₨ glyph — replace it with Rs.
+    const sym = (currency === '₨' || !currency) ? 'Rs.' : currency
     const fmtPDF = (n: number) => `${sym} ${(n ?? 0).toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`
 
     doc.setFontSize(16); doc.text(storeName, 14, 15)
