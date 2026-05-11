@@ -35,6 +35,7 @@ declare global {
       deleteCustomer: (id: number) => Promise<any>
       getCustomerLedger: (id: number) => Promise<any>
       addCreditPayment: (data: any) => Promise<any>
+      getTotalOutstanding: () => Promise<number>
       // Suppliers
       getSuppliers: (filters?: any) => Promise<any[]>
       getSupplier: (id: number) => Promise<any>
