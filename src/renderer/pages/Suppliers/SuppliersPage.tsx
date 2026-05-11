@@ -69,7 +69,7 @@ export default function SuppliersPage() {
     if (validItems.length === 0) { toast.error('Add at least one item'); return }
     const items = validItems.map(i => ({ product_id: i.product_id ? parseInt(i.product_id) : null, product_name: i.product_name, quantity: parseFloat(i.quantity), unit_price: parseFloat(i.unit_price), total_price: parseFloat(i.quantity) * parseFloat(i.unit_price) }))
     await window.api.createPurchase({ supplier_id: grnSupplier ? parseInt(grnSupplier) : null, user_id: user?.id, total_amount: grnTotal, paid_amount: parseFloat(grnPaid) || 0, notes: grnNotes, items })
-    toast.success('GRN created & stock updated')
+    toast.success('GRN created successfully')
     setShowGRN(false); setGrnItems([{ product_id: '', product_name: '', quantity: '', unit_price: '' }]); setGrnSupplier(''); setGrnPaid(''); setGrnNotes(''); load()
   }
 

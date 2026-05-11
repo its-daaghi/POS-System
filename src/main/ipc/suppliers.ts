@@ -172,10 +172,7 @@ export function registerSupplierHandlers() {
       `)
       for (const item of data.items) {
         insertItem.run(purchaseId, item.product_id || null, item.product_name, item.quantity, item.unit_price, item.total_price)
-        if (item.product_id) {
-          db().prepare('UPDATE products SET stock_quantity = stock_quantity + ?, purchase_price = ? WHERE id = ?')
-            .run(item.quantity, item.unit_price, item.product_id)
-        }
+        // Note: Stock is managed independently in the Products section
       }
 
       // Update supplier balance
