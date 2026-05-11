@@ -46,17 +46,79 @@ export default function ReportsPage() {
 
   const exportPDF = () => {
     const doc = new jsPDF()
+    const sym = currency || 'Rs.'
+    // jsPDF doesn't support ₨ glyph — use safe formatting
+    const fmtPDF = (n: number) => `${sym} ${(n ?? 0).toLocaleString('en-PK', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`
+
     doc.setFontSize(16); doc.text(storeName, 14, 15)
     doc.setFontSize(11); doc.text(`Report: ${tab.toUpperCase()} | Period: ${startDate} to ${endDate}`, 14, 25)
+
     if (tab === 'sales' && data?.sales) {
-      autoTable(doc, { startY: 35, head: [['Bill#','Customer','Method','Total','Date']], body: data.sales.map((s:any)=>[s.bill_number,s.customer_name||'Walk-in',s.payment_method,fmt(s.total_amount),formatDate(s.created_at)]) })
+      // Summary row first
+      if (data.summary) {
+        doc.setFontSize(10)
+        doc.text(`Total Bills: ${data.summary.total_bills}   Revenue: ${fmtPDF(data.summary.total_revenue)}   Avg Bill: ${fmtPDF(data.summary.avg_bill)}`, 14, 33)
+      }
+      autoTable(doc, {
+        startY: 40,
+        head: [['Bill #', 'Customer', 'Method', 'Amount', 'Date']],
+        body: data.sales.map((s: any) => [
+          s.bill_number,
+          s.customer_name || 'Walk-in',
+          s.payment_method,
+          fmtPDF(s.total_amount),
+          formatDate(s.created_at)
+        ])
+      })
+
+    } else if (tab === 'pl' && data) {
+      autoTable(doc, {
+        startY: 35,
+        head: [['Item', 'Amount']],
+        body: [
+          ['Total Revenue', fmtPDF(data.revenue)],
+          ['Cost of Goods Sold (COGS)', fmtPDF(data.cogs)],
+          ['Gross Profit', fmtPDF(data.grossProfit)],
+          ['Total Expenses', fmtPDF(data.expenses)],
+          ['Net Profit', fmtPDF(data.netProfit)],
+        ],
+        styles: { fontStyle: 'normal' },
+        didParseCell: (hookData: any) => {
+          if (hookData.row.index === 4) hookData.cell.styles.fontStyle = 'bold'
+        }
+      })
+      if (data.expenseByCategory?.length > 0) {
+        const lastY = (doc as any).lastAutoTable.finalY + 10
+        doc.setFontSize(12); doc.text('Expense Breakdown', 14, lastY)
+        autoTable(doc, {
+          startY: lastY + 5,
+          head: [['Category', 'Amount']],
+          body: data.expenseByCategory.map((e: any) => [e.category || 'Uncategorized', fmtPDF(e.total)])
+        })
+      }
+
     } else if (tab === 'inventory' && data) {
-      autoTable(doc, { startY: 35, head: [['Product','Category','Stock','Purchase Price','Sale Price','Stock Value']], body: data.map((p:any)=>[p.name,p.category_name||'',p.stock_quantity+' '+p.unit,fmt(p.purchase_price),fmt(p.sale_price),fmt(p.stock_value)]) })
+      autoTable(doc, {
+        startY: 35,
+        head: [['Product', 'Category', 'Stock', 'Buy Price', 'Sale Price', 'Stock Value']],
+        body: data.map((p: any) => [p.name, p.category_name || '', `${p.stock_quantity} ${p.unit}`, fmtPDF(p.purchase_price), fmtPDF(p.sale_price), fmtPDF(p.stock_value)])
+      })
+
     } else if (tab === 'top' && data) {
-      autoTable(doc, { startY: 35, head: [['Product','Qty Sold','Revenue','Cost','Profit']], body: data.map((p:any)=>[p.product_name,p.total_qty,fmt(p.total_revenue),fmt(p.total_cost),fmt(p.profit)]) })
+      autoTable(doc, {
+        startY: 35,
+        head: [['Product', 'Qty Sold', 'Revenue', 'Cost', 'Profit']],
+        body: data.map((p: any) => [p.product_name, p.total_qty, fmtPDF(p.total_revenue), fmtPDF(p.total_cost), fmtPDF(p.profit)])
+      })
+
     } else if (tab === 'credit' && data) {
-      autoTable(doc, { startY: 35, head: [['Customer','Phone','Balance']], body: data.map((c:any)=>[c.name,c.phone||'-',fmt(c.current_balance)]) })
+      autoTable(doc, {
+        startY: 35,
+        head: [['Customer', 'Phone', 'Balance Due']],
+        body: data.map((c: any) => [c.name, c.phone || '-', fmtPDF(c.current_balance)])
+      })
     }
+
     doc.save(`report_${tab}_${todayStr()}.pdf`)
     toast.success('PDF exported')
   }
