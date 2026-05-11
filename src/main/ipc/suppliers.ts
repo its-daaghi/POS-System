@@ -105,6 +105,25 @@ export function registerSupplierHandlers() {
       `).run(data.supplier_id, data.purchase_id || null, data.amount, data.notes || null, data.user_id || null)
       db().prepare('UPDATE suppliers SET current_balance = current_balance - ? WHERE id=?')
         .run(data.amount, data.supplier_id)
+
+      // Auto-allocate payment to outstanding purchases (oldest first)
+      let remainingPayment = data.amount
+      const outstandingPurchases = db().prepare(`
+        SELECT id, total_amount, paid_amount FROM purchases 
+        WHERE supplier_id = ? AND total_amount > paid_amount
+        ORDER BY created_at ASC
+      `).all(data.supplier_id) as any[]
+
+      const updatePurchase = db().prepare('UPDATE purchases SET paid_amount = paid_amount + ? WHERE id = ?')
+
+      for (const p of outstandingPurchases) {
+        if (remainingPayment <= 0) break
+        const amountDue = p.total_amount - p.paid_amount
+        const allocate = Math.min(remainingPayment, amountDue)
+        updatePurchase.run(allocate, p.id)
+        remainingPayment -= allocate
+      }
+
       return { success: true }
     })
     return pay()
