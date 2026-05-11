@@ -22,6 +22,8 @@ export default function SuppliersPage() {
   const [detail, setDetail] = useState<any>(null)
   const [form, setForm] = useState(emptySupplier)
   const [payForm, setPayForm] = useState({ amount: '', notes: '' })
+  const [showGRNDetail, setShowGRNDetail] = useState(false)
+  const [grnDetail, setGrnDetail] = useState<any>(null)
   const [grnItems, setGrnItems] = useState([{ product_id: '', product_name: '', quantity: '', unit_price: '' }])
   const [grnSupplier, setGrnSupplier] = useState('')
   const [grnPaid, setGrnPaid] = useState('')
@@ -83,6 +85,11 @@ export default function SuppliersPage() {
     setSelected(s); const data = await window.api.getSupplier(s.id); setDetail(data); setShowDetail(true)
   }
 
+  const openGRNDetail = async (p: any) => {
+    const data = await window.api.getPurchaseItems(p.id)
+    setGrnDetail(data); setShowGRNDetail(true)
+  }
+
   return (
     <div className="space-y-4 animate-fade-in">
       <div className="page-header">
@@ -133,17 +140,18 @@ export default function SuppliersPage() {
       {tab === 'purchases' && (
         <div className="table-container">
           <table className="table">
-            <thead><tr><th>GRN #</th><th>Supplier</th><th>Total</th><th>Paid</th><th>Balance</th><th>Date</th></tr></thead>
+            <thead><tr><th>GRN #</th><th>Supplier</th><th>Total</th><th>Paid</th><th>Balance</th><th>Date</th><th></th></tr></thead>
             <tbody>
-              {purchases.length === 0 ? <tr><td colSpan={6} className="text-center py-12 text-gray-500">No purchases</td></tr>
+              {purchases.length === 0 ? <tr><td colSpan={7} className="text-center py-12 text-gray-500">No purchases</td></tr>
               : purchases.map(p => (
-                <tr key={p.id}>
-                  <td className="font-mono text-primary-400">{p.grn_number}</td>
+                <tr key={p.id} className="cursor-pointer hover:bg-dark-600/50 transition-colors" onClick={() => openGRNDetail(p)}>
+                  <td className="font-mono text-primary-400 font-bold">{p.grn_number}</td>
                   <td>{p.supplier_name||'Direct'}</td>
                   <td className="font-bold text-white">{fmt(p.total_amount)}</td>
                   <td className="text-emerald-400">{fmt(p.paid_amount)}</td>
                   <td className={p.total_amount-p.paid_amount>0?'text-red-400 font-bold':'text-emerald-400'}>{fmt(p.total_amount-p.paid_amount)}</td>
                   <td className="text-xs text-gray-400">{formatDate(p.created_at)}</td>
+                  <td><span className="text-xs text-primary-400">👁 View</span></td>
                 </tr>
               ))}
             </tbody>
@@ -286,6 +294,78 @@ export default function SuppliersPage() {
                     </tr>
                   ))}
                 </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+      </Modal>
+
+      {/* GRN Detail Modal */}
+      <Modal isOpen={showGRNDetail} onClose={() => setShowGRNDetail(false)} title={`📦 GRN Details — ${grnDetail?.purchase?.grn_number || ''}`} size="lg">
+        {grnDetail && (
+          <div className="space-y-4">
+            {/* GRN Summary */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Supplier</p>
+                <p className="text-sm font-bold text-white">{grnDetail.purchase?.supplier_name || 'Direct'}</p>
+              </div>
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Amount</p>
+                <p className="text-sm font-bold text-white">{fmt(grnDetail.purchase?.total_amount || 0)}</p>
+              </div>
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Paid</p>
+                <p className="text-sm font-bold text-emerald-400">{fmt(grnDetail.purchase?.paid_amount || 0)}</p>
+              </div>
+              <div className="bg-dark-700 rounded-xl p-3 text-center">
+                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Balance Due</p>
+                <p className={`text-sm font-bold ${(grnDetail.purchase?.total_amount - grnDetail.purchase?.paid_amount) > 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                  {fmt((grnDetail.purchase?.total_amount || 0) - (grnDetail.purchase?.paid_amount || 0))}
+                </p>
+              </div>
+            </div>
+
+            {grnDetail.purchase?.notes && (
+              <div className="bg-dark-700/50 border border-dark-600 rounded-lg px-4 py-2 text-sm text-gray-400">
+                📝 {grnDetail.purchase.notes}
+              </div>
+            )}
+
+            {/* Items Table */}
+            <div className="table-container">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th className="text-right">Qty</th>
+                    <th className="text-right">Unit Price</th>
+                    <th className="text-right">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {grnDetail.items?.length === 0 && (
+                    <tr><td colSpan={5} className="text-center py-8 text-gray-500">No items found</td></tr>
+                  )}
+                  {grnDetail.items?.map((item: any, i: number) => (
+                    <tr key={item.id}>
+                      <td className="text-gray-500">{i + 1}</td>
+                      <td className="font-medium text-white">{item.product_name}</td>
+                      <td className="text-right text-gray-300">{item.quantity} {item.unit || ''}</td>
+                      <td className="text-right text-gray-300">{fmt(item.unit_price)}</td>
+                      <td className="text-right font-bold text-primary-400">{fmt(item.total_price)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+                {grnDetail.items?.length > 0 && (
+                  <tfoot>
+                    <tr className="border-t-2 border-dark-500">
+                      <td colSpan={4} className="text-right font-bold text-white py-3 px-4">Grand Total</td>
+                      <td className="text-right font-bold text-xl text-primary-400 py-3 px-4">{fmt(grnDetail.purchase?.total_amount || 0)}</td>
+                    </tr>
+                  </tfoot>
+                )}
               </table>
             </div>
           </div>

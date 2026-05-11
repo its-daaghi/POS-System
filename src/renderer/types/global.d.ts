@@ -44,6 +44,7 @@ declare global {
       deleteSupplier: (id: number) => Promise<any>
       getPurchases: (filters?: any) => Promise<any[]>
       createPurchase: (data: any) => Promise<any>
+      getPurchaseItems: (purchaseId: number) => Promise<any>
       addSupplierPayment: (data: any) => Promise<any>
       // Stock
       getStockAdjustments: () => Promise<any[]>

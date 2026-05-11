@@ -46,6 +46,7 @@ contextBridge.exposeInMainWorld('api', {
   deleteSupplier: (id: number) => ipcRenderer.invoke('delete-supplier', id),
   getPurchases: (filters?: any) => ipcRenderer.invoke('get-purchases', filters),
   createPurchase: (data: any) => ipcRenderer.invoke('create-purchase', data),
+  getPurchaseItems: (purchaseId: number) => ipcRenderer.invoke('get-purchase-items', purchaseId),
   addSupplierPayment: (data: any) => ipcRenderer.invoke('add-supplier-payment', data),
 
   // Stock

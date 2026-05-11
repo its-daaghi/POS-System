@@ -157,6 +157,25 @@ export function registerSupplierHandlers() {
     return db().prepare(query).all(...params)
   })
 
+  ipcMain.handle('get-purchase-items', (_, purchaseId: number) => {
+    const purchase = db().prepare(`
+      SELECT p.*, s.name as supplier_name
+      FROM purchases p
+      LEFT JOIN suppliers s ON p.supplier_id = s.id
+      WHERE p.id = ?
+    `).get(purchaseId) as any
+
+    const items = db().prepare(`
+      SELECT pi.*, pr.unit
+      FROM purchase_items pi
+      LEFT JOIN products pr ON pi.product_id = pr.id
+      WHERE pi.purchase_id = ?
+      ORDER BY pi.id ASC
+    `).all(purchaseId)
+
+    return { purchase, items }
+  })
+
   ipcMain.handle('create-purchase', (_, data: any) => {
     const createGRN = db().transaction(() => {
       const grnNumber = generateGRN()
