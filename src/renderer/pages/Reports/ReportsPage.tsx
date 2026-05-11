@@ -80,14 +80,18 @@ export default function ReportsPage() {
     <div className="space-y-4 animate-fade-in">
       <div className="page-header">
         <h1 className="page-title">📈 Reports</h1>
-        <div className="flex items-center gap-4">
-          <div className="bg-red-900/30 border border-red-800 px-4 py-2 rounded-xl text-center">
-            <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Total Remaining (Udhaar)</p>
-            <p className="text-lg font-bold text-red-400">{fmt(totalOutstanding)}</p>
-          </div>
-          <div className="flex gap-2">
-            <button onClick={exportPDF} className="btn-danger btn-sm">📄 PDF</button>
-            <button onClick={exportExcel} className="btn-success btn-sm">📊 Excel</button>
+        <div className="flex gap-2">
+          <button onClick={exportPDF} className="btn-danger btn-sm">📄 PDF</button>
+          <button onClick={exportExcel} className="btn-success btn-sm">📊 Excel</button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="bg-red-900/20 border border-red-800/50 p-4 rounded-2xl flex items-center gap-4">
+          <div className="w-12 h-12 bg-red-900/40 rounded-xl flex items-center justify-center text-2xl">💳</div>
+          <div>
+            <p className="text-[11px] text-gray-400 uppercase font-bold tracking-widest">Total Remaining (Udhaar)</p>
+            <p className="text-2xl font-bold text-red-400 leading-tight">{fmt(totalOutstanding)}</p>
           </div>
         </div>
       </div>
