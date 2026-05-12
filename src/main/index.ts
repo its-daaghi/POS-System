@@ -109,6 +109,13 @@ app.whenReady().then(() => {
     shell.openExternal(url)
   })
 
+  ipcMain.handle('open-database-folder', async () => {
+    const dbPath = isDev
+      ? join(__dirname, '../../pos_database.db')
+      : join(app.getPath('userData'), 'pos_database.db')
+    shell.showItemInFolder(dbPath)
+  })
+
   ipcMain.handle('get-app-version', () => app.getVersion())
 
   createWindow()

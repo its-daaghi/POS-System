@@ -166,9 +166,11 @@ export function registerSaleHandlers() {
     return { success: true }
   })
 
-  ipcMain.handle('get-dashboard-stats', (_) => {
-    const today = new Date().toISOString().split('T')[0]
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0]
+  ipcMain.handle('get-dashboard-stats', (_, selectedDate?: string) => {
+    const today = selectedDate || new Date().toISOString().split('T')[0]
+    const yesterdayDate = new Date(today)
+    yesterdayDate.setDate(yesterdayDate.getDate() - 1)
+    const yesterday = yesterdayDate.toISOString().split('T')[0]
 
     const todaySales = db().prepare(`
       SELECT COUNT(*) as count, COALESCE(SUM(total_amount),0) as revenue,

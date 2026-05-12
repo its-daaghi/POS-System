@@ -26,7 +26,7 @@ declare global {
       getHeldBills: () => Promise<any[]>
       holdBill: (data: any) => Promise<any>
       deleteHeldBill: (id: number) => Promise<any>
-      getDashboardStats: () => Promise<any>
+      getDashboardStats: (date?: string) => Promise<any>
       // Customers
       getCustomers: (filters?: any) => Promise<any[]>
       getCustomer: (id: number) => Promise<any>
@@ -79,6 +79,7 @@ declare global {
       backupDatabase: () => Promise<any>
       restoreDatabase: () => Promise<any>
       getAppVersion: () => Promise<string>
+      openDatabaseFolder: () => Promise<void>
       openExternal: (url: string) => Promise<void>
     }
   }

@@ -26,7 +26,7 @@ contextBridge.exposeInMainWorld('api', {
   getHeldBills: () => ipcRenderer.invoke('get-held-bills'),
   holdBill: (data: any) => ipcRenderer.invoke('hold-bill', data),
   deleteHeldBill: (id: number) => ipcRenderer.invoke('delete-held-bill', id),
-  getDashboardStats: () => ipcRenderer.invoke('get-dashboard-stats'),
+  getDashboardStats: (date?: string) => ipcRenderer.invoke('get-dashboard-stats', date),
 
   // Customers
   getCustomers: (filters?: any) => ipcRenderer.invoke('get-customers', filters),
@@ -86,6 +86,7 @@ contextBridge.exposeInMainWorld('api', {
   // Backup / Restore
   backupDatabase: () => ipcRenderer.invoke('backup-database'),
   restoreDatabase: () => ipcRenderer.invoke('restore-database'),
+  openDatabaseFolder: () => ipcRenderer.invoke('open-database-folder'),
 
   // App
   getAppVersion: () => ipcRenderer.invoke('get-app-version'),

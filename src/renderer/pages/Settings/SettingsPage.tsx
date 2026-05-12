@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useSettingsStore } from '../../store/settingsStore'
 import { useAuthStore } from '../../store/authStore'
 import Modal from '../../components/Modal/Modal'
@@ -10,7 +11,9 @@ type Tab = typeof TABS[number]
 const emptyUser = { username: '', password: '', full_name: '', role: 'cashier', is_active: true }
 
 export default function SettingsPage() {
-  const [tab, setTab] = useState<Tab>('store')
+  const location = useLocation()
+  const initialTab = (location.state as any)?.tab as Tab
+  const [tab, setTab] = useState<Tab>(TABS.includes(initialTab) ? initialTab : 'store')
   const [users, setUsers] = useState<any[]>([])
   const [activityLog, setActivityLog] = useState<any[]>([])
   const [showUserModal, setShowUserModal] = useState(false)
@@ -229,6 +232,13 @@ export default function SettingsPage() {
             <p className="text-sm text-red-400">Warning: This will replace all current data with the backup. The app will restart automatically.</p>
             <button onClick={handleRestore} className="btn-danger w-full">📤 Restore from Backup</button>
           </div>
+          {currentUser?.role === 'admin' && (
+            <div className="card space-y-3 border-primary-800/30">
+              <h3 className="font-semibold text-white">📁 Advanced Management</h3>
+              <p className="text-sm text-gray-400">Directly access the database file on your computer for manual management or troubleshooting.</p>
+              <button onClick={() => window.api.openDatabaseFolder()} className="btn-secondary w-full">📂 Open Database Folder</button>
+            </div>
+          )}
           <div className="card space-y-2">
             <h3 className="font-semibold text-white text-sm">App Information</h3>
             <div className="text-xs text-gray-400 space-y-1">
